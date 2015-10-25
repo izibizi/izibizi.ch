@@ -1,0 +1,48 @@
+.hero {
+  $hero-rotation: 120deg;
+  $first-pc: 20%;
+  $second-pc: 80%;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop($first-pc,$orange), color-stop($second-pc,$blue)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient($hero-rotation, $orange $first-pc, $blue $second-pc); /* Chrome10+,Safari5.1+ */
+  background:    -moz-linear-gradient($hero-rotation, $orange $first-pc, $blue $second-pc); /* FF3.6+ */
+  background:     -ms-linear-gradient($hero-rotation, $orange $first-pc, $blue $second-pc); /* IE10+ */
+  background:      -o-linear-gradient($hero-rotation, $orange $first-pc, $blue $second-pc); /* Opera 11.10+ */
+  background:         linear-gradient($hero-rotation, $orange $first-pc, $blue $second-pc); /* W3C */
+
+  -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+     -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+          box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+
+  margin-bottom: 50px;
+  margin-top: -30px;
+  padding-top: 30px;
+  overflow: hidden;
+
+  color: #fff;
+
+  a {
+    color: $blue;
+  }
+
+  h1 {
+    margin-top: 120px;
+  }
+}
+
+.hero-img {
+  text-align: right;
+
+  img {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .flyer {
+    $rotation: rotate(20deg);
+    -webkit-transform: $rotation;
+       -moz-transform: $rotation;
+        -ms-transform: $rotation;
+         -o-transform: $rotation;
+            transform: $rotation;
+  }
+}

@@ -1,0 +1,79 @@
+@import "settings";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html, body {
+  font-size: 100%;
+}
+html, article, aside, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+
+a {
+  transition: all .2s ease-in-out;
+}
+a:hover, a:focus {
+  color: $blue;
+}
+
+// FIX TOP BAR ACTIVE LINK
+.top-bar-section ul li.active>a {
+  background: $primary-color !important;
+  transition: none;
+}
+
+#lead h3 {
+  margin-top: 80px;
+}
+
+#footer p {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.top-bar {
+  margin-bottom: 30px;
+}
+
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.right { text-align: right; }
+.left  { text-align: left;  }
+
+//
+// Termine
+//
+.termine {
+  // fix Termine on small devices
+  overflow-x: auto;
+}
+.termine-table {
+  width: 100%;
+  tr {
+    transition: all .1s ease-in-out;
+    td {
+      vertical-align: top;
+    }
+  }
+  tr:hover {
+    background-color: scale-color($table-bg, $lightness: 10%);
+  }
+}
+
+// flyer
+#flyer {
+  margin-bottom: 30px;
+}
+
+// own stuff
+@import
+  "fb-gallery",
+  "hero",
+  "mitglieder";

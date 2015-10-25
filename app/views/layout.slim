@@ -1,0 +1,12 @@
+doctype html
+html lang="de"
+  head
+    meta charset="utf-8"
+    title GM Izi bizi tini wini
+    == stylesheet 'application'
+    
+  body
+    .container== yield
+
+    == javascript '//code.jquery.com/jquery-2.1.4.min.js'
+    == javascript 'application'

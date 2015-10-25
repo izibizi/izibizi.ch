@@ -1,0 +1,17 @@
+.fb-gallery {
+  li {
+    margin-top: 10px;
+    text-align: center;
+
+    a {
+      width: 138px;
+      height: 138px;
+      line-height: 127px;
+      background-color: #000;
+
+      img {
+        vertical-align: middle;
+      }
+    }
+  }
+}

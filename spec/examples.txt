@@ -1,0 +1,5 @@
+example_id                    | status | run_time        |
+----------------------------- | ------ | --------------- |
+./spec/assets_spec.rb[1:1:1]  | passed | 0.02877 seconds |
+./spec/assets_spec.rb[1:2:1]  | passed | 0.02086 seconds |
+./spec/website_spec.rb[1:1:1] | passed | 0.18955 seconds |

@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+ENV['RACK_ENV'] ||= 'development'
+require 'bundler/setup'
+Bundler.require(:default, ENV['RACK_ENV'])
+
+ARGV.each do |group|
+  puts "Bundler: require group :#{group}"
+  Bundler.require(group.to_sym)
+end
+
+Pry.start
