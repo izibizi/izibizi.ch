@@ -2,13 +2,10 @@ source 'https://rubygems.org'
 ruby '2.2.3'
 
 gem 'pry'
-gem 'thin', group: :rackup
-
-group :app do
-  gem 'sinatra'
-  gem 'slim'
-  gem 'sprockets-helpers'
-end
+gem 'puma'
+gem 'sinatra'
+gem 'slim'
+gem 'sprockets-helpers'
 
 group :assets do
   gem 'sprockets'
@@ -22,8 +19,8 @@ group :development, :test do
   gem 'shotgun'
   gem 'rspec'
   gem 'rack-test'
-  # gem 'guard', require: false
-  # gem 'guard-rspec', require: false
+  gem 'guard', require: false
+  gem 'guard-rspec', require: false
 end
 
 # vi: syntax=ruby
