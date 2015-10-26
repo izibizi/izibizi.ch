@@ -1,0 +1,8 @@
+#!/bin/sh
+cd "$(dirname $0)/.."
+
+bundle version 2>/dev/null || gem install bundler --no-rdoc --no-ri
+bundle check 2>/dev/null || {
+  bundle install --without production
+  bundle clean
+}
