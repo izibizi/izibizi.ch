@@ -1,0 +1,31 @@
+// See https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
+
+// Own stuff
+$orange: #ffa500;
+$blue: #0080dd;
+
+$brand-primary: $orange;
+
+$body-bg: #222222;
+$text-color: #dddddd;
+
+$font-size-base: 16px;
+
+// $header-font-color: #fff;
+// $subheader-font-color: scale-color($header-font-color, $lightness: -35%);
+// $small-font-color: scale-color($header-font-color, $lightness: -35%);
+
+$table-bg: #333333;
+$table-head-bg: #454545;
+$table-even-row-bg: #282828;
+$table-border-color: #111;
+$table-head-font-color: #fff;
+$table-row-font-color: #fff;
+$thumb-box-shadow-hover: 0 0 6px 1px rgba($brand-primary, 0.8);
+
+// collapse as soon as the menu doesn't fit in the topbar anymore
+// $topbar-breakpoint: 46.25em;
+// $topbar-media-query: "only screen and (min-width: 46.25em)";
+
+@import "bootstrap-sprockets";
+@import "bootstrap";

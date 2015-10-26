@@ -1,0 +1,21 @@
+.termine
+  p Keine Termine anstehend!
+
+/       <table class="termine-table">
+/       <thead><tr><th colspan="2">Wann</th><th>Was</th><th>Wo</th></tr></thead>
+/       <tbody>
+/       {% for termin in site.data.termine %}
+/         <tr>
+/           <td>{{termin.datum}}</td>
+/           <td>
+/             {% for gig in termin.gigs %}{{gig.zeit}}<br>{% endfor %}
+/           </td>
+/           <td>
+/             {% for gig in termin.gigs %}{{gig.was}}<br>{% endfor %}
+/           </td>
+/           <td>
+/             {% for gig in termin.gigs %}{{gig.wo}}<br>{% endfor %}
+/           </td>
+/         </tr>
+/       {% endfor %}
+/       </tbody></table>

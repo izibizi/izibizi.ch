@@ -8,63 +8,32 @@ section.hero
     .medium-5.large-6.columns.hero-img
       img src="/img/izi-logo.png" alt="GM Izi bizi tini wini" data-retina=true
 
-/ <div class="row" id="lead">
-/   <div class="small-6 columns">
-/     <h3>Like uns auf <a href="http://fb.me/gmizibizi">Facebook</a>!</h3>
-/   </div>
-/   <div class="small-6 columns right">
-/     <h3>Werde <a href="/passiv">Passivmitglied</a>!</h3>
-/   </div>
-/ </div>
-/ 
-/ <div class="row">
-/   <hr>
-/   <h1>Termine <small>Nicht, dass man uns überhören könnte...</small></h1>
-/ 
-/   <div class="termine">
-/     {% if site.data.termine %}
-/       <table class="termine-table">
-/       <thead><tr><th colspan="2">Wann</th><th>Was</th><th>Wo</th></tr></thead>
-/       <tbody>
-/       {% for termin in site.data.termine %}
-/         <tr>
-/           <td>{{termin.datum}}</td>
-/           <td>
-/             {% for gig in termin.gigs %}{{gig.zeit}}<br>{% endfor %}
-/           </td>
-/           <td>
-/             {% for gig in termin.gigs %}{{gig.was}}<br>{% endfor %}
-/           </td>
-/           <td>
-/             {% for gig in termin.gigs %}{{gig.wo}}<br>{% endfor %}
-/           </td>
-/         </tr>
-/       {% endfor %}
-/       </tbody></table>
-/     {% else %}
-/       <p>Keine Termine anstehend!</p>
-/     {% endif %}
-/   </div>
-/ </div>
-/ 
-/ <div class="row">
-/   <hr>
-/   <h1>Kontakt </h1>
-/   <div class="medium-6 columns">
-/     <h3>Tourenplanung</h3>
-/     <p>Roger Kehl, <a href="mailto:&#116;&#111;&#117;&#114;&#64;&#105;&#122;&#105;&#98;&#105;&#122;&#105;&#46;&#99;&#104;">&#116;&#111;&#117;&#114;&#64;&#105;&#122;&#105;&#98;&#105;&#122;&#105;&#46;&#99;&#104;</a></p>
-/ 
-/   </div>
-/   <div class="medium-6 columns">
-/     <h3>Pr&auml;sidentin</h3>
-/     <p>Ramona Zingali, <a href="mailto:&#112;&#114;&#97;&#101;&#115;&#105;&#64;&#105;&#122;&#105;&#98;&#105;&#122;&#105;&#46;&#99;&#104;">&#112;&#114;&#97;&#101;&#115;&#105;&#64;&#105;&#122;&#105;&#98;&#105;&#122;&#105;&#46;&#99;&#104;</a></p>
-/     <p>+41 78 881 60 82</p>
-/   </div>
-/ </div>
-/ 
-/ <div class="row">
-/   <hr>
-/ 
-/   <h1>Geschichte <small>Wie alles begann</small></h1>
-/   {% include geschichte.html %}
-/ </div>
+.container
+  .row
+    .col-xs-6
+      p.lead Like uns auf <a href="http://fb.me/gmizibizi">Facebook</a>!
+    .col-xs-6
+      p.lead Werde <a href="/passiv">Passivmitglied</a>!
+
+  hr
+  h1
+    ' Termine
+    small Nicht, dass man uns überhören könnte...
+  == slim :_termine
+
+  hr
+  h1 Kontakt
+  .row
+    .col-md-6
+      h3 Tourenplanung
+      p Roger Kehl, <a href="mailto:&#116;&#111;&#117;&#114;&#64;&#105;&#122;&#105;&#98;&#105;&#122;&#105;&#46;&#99;&#104;">&#116;&#111;&#117;&#114;&#64;&#105;&#122;&#105;&#98;&#105;&#122;&#105;&#46;&#99;&#104;</a>
+    .col-md-6
+      h3 Pr&auml;sidentin
+      p Ramona Zingali, <a href="mailto:&#112;&#114;&#97;&#101;&#115;&#105;&#64;&#105;&#122;&#105;&#98;&#105;&#122;&#105;&#46;&#99;&#104;">&#112;&#114;&#97;&#101;&#115;&#105;&#64;&#105;&#122;&#105;&#98;&#105;&#122;&#105;&#46;&#99;&#104;</a>
+      p +41 78 881 60 82
+
+  hr
+  h1
+    ' Geschichte
+    small Wie alles begann
+  == slim :_geschichte

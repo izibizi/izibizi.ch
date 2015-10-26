@@ -1,51 +1,32 @@
-@import "settings";
-@import "bootstrap-sprockets";
-@import "bootstrap";
+@import "bootstrap-and-overrides";
 
-html, body {
-  font-size: 100%;
-}
-html, article, aside, footer, header, hgroup, main, nav, section {
-  display: block;
-}
-
+body { padding-top: 70px; }
 
 a {
   transition: all .2s ease-in-out;
+  text-decoration: none;
 }
 a:hover, a:focus {
   color: $blue;
+  text-decoration: none;
 }
 
-// FIX TOP BAR ACTIVE LINK
-.top-bar-section ul li.active>a {
-  background: $primary-color !important;
+hr { border-color: $text-muted; }
+
+// Highlight Navbar active Link
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background: $brand-primary !important;
+  color: #000;
   transition: none;
 }
 
-#lead h3 {
-  margin-top: 80px;
-}
-
-#footer p {
+.page-footer p {
   text-align: center;
   font-size: 0.8em;
+  color: $text-muted;
 }
-
-.top-bar {
-  margin-bottom: 30px;
-}
-
-.center {
-  text-align: center;
-}
-
-.justify {
-  text-align: justify;
-}
-
-.right { text-align: right; }
-.left  { text-align: left;  }
 
 //
 // Termine

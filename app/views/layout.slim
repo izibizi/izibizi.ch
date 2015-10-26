@@ -7,7 +7,13 @@ html lang="de"
     
   body
     == slim :_nav
-    .container== yield
+    == yield
+
+    footer.page-footer
+      .container
+        hr
+        p Code &amp; Design 2015 by <a href="http://mhutter.net">Manuel Hutter</a> - <a href="#{url('/impressum')}">Impressum</a>
+        p Powered by  <a href="http://sinatrarb.com/">Sinatra</a> and <a href="https://getbootstrap.com/">Bootstrap</a>, Hosted on <a href="https://heroku.com/">Heroku</a>.
 
     == javascript '//code.jquery.com/jquery-2.1.4.min.js'
     == javascript 'application'
