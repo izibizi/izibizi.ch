@@ -9,8 +9,8 @@ configure do
   set :production, ENV['RACK_ENV'].eql?('production')
   set :app_root, File.expand_path('..', __FILE__)
   set :views, File.join(settings.app_root, 'app/views')
-  set :assets, Izibizi::AssetsEnvironment.get(settings.app_root,
-                                              settings.production?)
+  set :assets, AssetsEnvironment.get(settings.app_root,
+                                     settings.production)
 
   Sprockets::Helpers.configure do |config|
     config.environment  = settings.assets

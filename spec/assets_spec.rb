@@ -2,7 +2,7 @@ require './config/sprockets'
 
 RSpec.describe 'Assets' do
   let(:app) do
-    Izibizi::AssetsEnvironment.get(File.expand_path('../..', __FILE__))
+    AssetsEnvironment.get(File.expand_path('../..', __FILE__))
   end
 
   describe '/application.css' do
