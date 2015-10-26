@@ -2,10 +2,13 @@ source 'https://rubygems.org'
 ruby '2.2.3'
 
 gem 'pry'
-gem 'puma'
-gem 'sinatra'
-gem 'slim'
-gem 'sprockets-helpers'
+gem 'puma', group: :rackup
+
+group :app do
+  gem 'sinatra'
+  gem 'slim'
+  gem 'sprockets-helpers'
+end
 
 group :assets do
   gem 'sprockets'
