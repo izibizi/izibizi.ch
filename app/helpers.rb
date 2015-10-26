@@ -1,4 +1,6 @@
 helpers do
+  include Sprockets::Helpers
+
   # Menu Item
   def menu_link(path, text)
     active = request.path_info.eql?(path) ? ' class="active"' : ''
@@ -16,6 +18,4 @@ helpers do
     s = asset_path(s + '.js') unless s =~ /^(https?:\/)?\//
     %(<script src="#{s}"></script>)
   end
-
-  include Sprockets::Helpers
 end

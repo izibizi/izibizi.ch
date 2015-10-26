@@ -3,7 +3,6 @@
 body { padding-top: 70px; }
 
 a {
-  transition: all .2s ease-in-out;
   text-decoration: none;
 }
 a:hover, a:focus {
@@ -13,12 +12,19 @@ a:hover, a:focus {
 
 hr { border-color: $text-muted; }
 
+img {
+  // prevent imgs from growing when being replaced with retina variant.
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  height: auto;
+}
+
 // Highlight Navbar active Link
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   background: $brand-primary !important;
-  color: #000;
   transition: none;
 }
 

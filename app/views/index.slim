@@ -1,19 +1,19 @@
 section.hero
-  .row
+  .container
+    .row
+      .col-md-7.col-lg-6
+        h1#welcome Willkommen!
+        h3 auf der Homepage der<br>Guggemusig Izi bizi tini wini
 
-    .medium-7.large-6.columns
-      h1#welcome Willkommen!
-      h3 auf der Homepage der<br>Guggemusig Izi bizi tini wini
-
-    .medium-5.large-6.columns.hero-img
-      img src="/img/izi-logo.png" alt="GM Izi bizi tini wini" data-retina=true
+      .col-md-5.col-lg-6.hero-img
+        img src=image_path("izi-logo") alt="GM Izi bizi tini wini" data-retina=image_path("izi-logo@2")
 
 .container
   .row
     .col-xs-6
       p.lead Like uns auf <a href="http://fb.me/gmizibizi">Facebook</a>!
     .col-xs-6
-      p.lead Werde <a href="/passiv">Passivmitglied</a>!
+      p.lead Werde <a href="#{url('/passiv')}">Passivmitglied</a>!
 
   hr
   h1

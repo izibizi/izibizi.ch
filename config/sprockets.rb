@@ -17,6 +17,7 @@ class AssetsEnvironment
 
     assets.append_path('app/assets/css')
     assets.append_path('app/assets/js')
+    assets.append_path('app/assets/img')
     assets.append_path('vendor/assets')
 
     assets.cache = Sprockets::Cache::FileStore.new("#{root_path}/tmp")
