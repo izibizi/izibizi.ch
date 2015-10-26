@@ -1,5 +1,8 @@
 language: ruby
 rvm:
   - "2.2.3"
-bundler_args: --without production:rackup
+bundler_args: --without production:rackup --path .bundle
+cache:
+  directories:
+    - .bundle
 script: bundle exec rspec spec
