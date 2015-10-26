@@ -22,7 +22,7 @@ RSpec.configure do |config|
   config.run_all_when_everything_filtered = true
   config.example_status_persistence_file_path = "spec/examples.txt"
   config.disable_monkey_patching!
-  config.warnings = true
+  config.warnings = ENV['TRAVIS'].nil? # disable warnings on travis
   config.default_formatter = 'doc' if config.files_to_run.one?
   config.profile_examples = 0
   config.order = :random
