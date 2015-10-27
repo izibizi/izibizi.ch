@@ -11,6 +11,13 @@ $text-color: #dddddd;
 
 $font-size-base: 16px;
 
+$close-color: #fff;
+
+$page-header-border-color: lighten($body-bg, 12%);
+
+$modal-content-bg: $body-bg;
+$modal-header-border-color: $page-header-border-color;
+
 // $header-font-color: #fff;
 // $subheader-font-color: scale-color($header-font-color, $lightness: -35%);
 // $small-font-color: scale-color($header-font-color, $lightness: -35%);

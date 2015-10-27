@@ -1,4 +1,6 @@
-.mitglieder {
+.mitglieder .thumbnail {
+  border-color: lighten($body-bg, 10%);
+
   a, img {
     transition-property: border-radius;
     transition-duration: 0.15s;
@@ -17,23 +19,19 @@
     width: 140px;
     height: 140px;
   }
+
+  .caption {
+    height: 62px;
+  }
 }
 
 .mitglied-modal {
   img {
     max-width: 290px;
     max-height: 400px;
-    margin-right: 20px;
+    // margin-right: 20px;
   }
-
-  .profil div {
+  dl {
     margin-top: 30px;
-
-    strong {
-      display: inline-block;
-      width: 160px;
-      text-align: right;
-      margin-right: 20px;
-    }
   }
 }

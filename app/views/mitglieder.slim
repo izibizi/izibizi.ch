@@ -1,7 +1,40 @@
 .container
   h1.page-header Unsere Mitglieder
-  .row
-    - settings.mitglieder.each do |mitglied|
-      .center.col-xs-6.col-md-3.col-lg-2
-        img.img-circle src=image_path("mitglieder/tn-#{mitglied['id']}") alt=mitglied['name'] data-retina=image_path("mitglieder/tn-#{mitglied['id']}@2")
-        p = mitglied['name']
+  .row.mitglieder
+    - settings.mitglieder.each do |m|
+      .col-xs-6.col-sm-4.col-md-3.col-lg-2
+        .thumbnail
+          a data-toggle="modal" data-target="#modal-#{m['id']}"
+            img.img-circle src=url("/img/mitglieder/tn-#{m['id']}.jpg") alt=m['name'] data-retina=url("/img/mitglieder/tn-#{m['id']}@2.jpg")
+          .caption.text-center = m['name']
+
+      .modal.fade.mitglied-modal id="modal-#{m['id']}" tabindex="-1" role="dialog" aria-labelledby="modal-#{m['id']}-label"
+        .modal-dialog.modal-lg role="document"
+          .modal-content
+            .modal-header
+              button.close type="button" data-dismiss="modal" aria-label="Schliessen"
+                span aria-hidden="true" &times
+              h4.modal-title id="modal-#{m['id']}-label"
+                = m['name']
+                small< = m['instrument']
+            .modal-body
+              .row
+                .col-sm-12.col-md-5.text-center
+                  img.img-thumbnail src="/img/mitglieder/#{m['id']}.jpg" alt=m['name']
+                .col-sm-12.col-md-7
+                  dl.dl-horizontal
+                    - if m['rufname']
+                      dt Rufname
+                      dd = m['rufname']
+                    - if m['aufgabe']
+                      dt Aufgabe im Verein
+                      dd = m['aufgabe']
+                    - if m['spruch']
+                      dt Spruch
+                      dd = m['spruch']
+                    - if m['hobbys']
+                      dt Hobbys
+                      dd = m['hobbys']
+                    - if m['dabei_seit']
+                      dt Dabei seit
+                      dd = m['dabei_seit']
