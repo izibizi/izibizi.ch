@@ -20,9 +20,9 @@ configure do
   set :assets, AssetsEnvironment.get(settings.app_root,
                                      settings.production)
 
-  # load data
+  # load static data
   set :termine, load_data(:termine) || []
-  set :mitglieder, load_data(:mitglieder)
+  set :mitglieder, load_data(:mitglieder).sort_by { |m| m['id'] }
 
   Sprockets::Helpers.configure do |config|
     config.environment  = settings.assets
