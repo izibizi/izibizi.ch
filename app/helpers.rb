@@ -1,4 +1,4 @@
-helpers do
+module Helpers
   include Sprockets::Helpers
 
   # Menu Item

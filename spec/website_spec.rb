@@ -1,6 +1,5 @@
 RSpec.describe 'Website' do
   before { get '/' }
-
   describe '/' do
     it 'gets the homepage' do
       expect(last_response).to be_ok

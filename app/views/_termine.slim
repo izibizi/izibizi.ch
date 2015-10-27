@@ -1,21 +1,18 @@
-.termine
-  p Keine Termine anstehend!
+- if settings.termine.any?
+  table.table.table.striped.termine-table
+    thead
+      tr
+        th colspan="2" Wann
+        th Was
+        th Wo
+    tbody
+      - settings.termine.each do |termin|
+        tr
+          td = termin['datum']
+          td == termin['gigs'].map { |gig| gig['zeit'] }.join('<br>')
+          td == termin['gigs'].map { |gig| gig['was'] }.join('<br>')
+          td == termin['gigs'].map { |gig| gig['wo'] }.join('<br>')
 
-/       <table class="termine-table">
-/       <thead><tr><th colspan="2">Wann</th><th>Was</th><th>Wo</th></tr></thead>
-/       <tbody>
-/       {% for termin in site.data.termine %}
-/         <tr>
-/           <td>{{termin.datum}}</td>
-/           <td>
-/             {% for gig in termin.gigs %}{{gig.zeit}}<br>{% endfor %}
-/           </td>
-/           <td>
-/             {% for gig in termin.gigs %}{{gig.was}}<br>{% endfor %}
-/           </td>
-/           <td>
-/             {% for gig in termin.gigs %}{{gig.wo}}<br>{% endfor %}
-/           </td>
-/         </tr>
-/       {% endfor %}
-/       </tbody></table>
+- else
+  .termine
+    p Keine Termine anstehend!
