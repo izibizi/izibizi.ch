@@ -1,0 +1,7 @@
+.container
+  h1.page-header Unsere Mitglieder
+  .row
+    - settings.mitglieder.each do |mitglied|
+      .center.col-xs-6.col-md-3.col-lg-2
+        img.img-circle src=image_path("mitglieder/tn-#{mitglied['id']}") alt=mitglied['name'] data-retina=image_path("mitglieder/tn-#{mitglied['id']}@2")
+        p = mitglied['name']

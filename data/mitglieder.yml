@@ -1,0 +1,297 @@
+---
+- id: adriana-gunzenreiner
+  name: Adriana Gunzenreiner
+  instrument: Trompete
+  rufname: Adi
+  hobbys: mitm hund laufä
+  dabei_seit: 2015
+- id: andrea-steingruber
+  name: Andrea Steingruber
+  instrument: Trompete
+  rufname: Andrea
+  aufgabe: Kassier, Schminkteam
+  spruch: So oder so!...
+  hobbys: Gugge, Familie, Ferien/Reisen, Fussball
+  dabei_seit: 2011
+- id: andrea-zurbuchen
+  name: Andrea Zurbuchen
+  instrument: Trompete
+  rufname: Andrea, Andi
+  hobbys: Familie, schwimme, gugge, tanze, lese
+  dabei_seit: 2004
+- id: andy-burri
+  name: Andy Burri
+  instrument: Pauke
+  rufname: Benscho
+  spruch: Nicht wenn du atmest, sondern wenn es dir den Atem raubt, lebst Du!
+  hobbys: Musik, verrückt sein
+  dabei_seit: 2015
+- id: andy-thaler
+  name: Andy Thaler
+  instrument: Pauke
+  rufname: Thaler
+  aufgabe: Revisor
+  spruch: saufen, fressen und fffffolenzä
+  dabei_seit: 2005
+- id: anina-ryffel
+  name: Anina Ryffel
+  instrument: Posaune
+  rufname: Anina
+  aufgabe: Kommunikationsförderung (blöd umeschnorre :) )
+  spruch: I glaub da lömer uus :P!
+  hobbys: Bei Ideen bitte melden!!
+  dabei_seit: 2015
+- id: carina-widmer
+  name: Carina Widmer
+  instrument: Cinellen
+  dabei_seit: 2015
+- id: christina-inhelder
+  name: Christina Inhelder
+  instrument: Posaune
+  rufname: Pumba
+  spruch: Lieber zue hei als hei zue!
+  hobbys: Ausgang, Snowboarden, Squashen
+  dabei_seit: 2005
+- id: daniel-steingruber
+  name: Daniel Steingruber
+  instrument: Trompete
+  rufname: Dani
+  aufgabe: Trompetenspielen, Saxophonlehrer
+  spruch: Alles glatti Vögel!
+  hobbys: Gugge, Familie, Ferien
+  dabei_seit: 2000
+- id: erika-naef
+  name: Erika Näf
+  instrument: Hörnli
+  rufname: Eri, Generika, ...
+  aufgabe: Gueti Stimmig bringe!
+  spruch: Nicht perfekt, aber einzigartig!
+  hobbys: Turnverein, Uusgang
+  dabei_seit: 2010
+- id: fabian-ryffel
+  name: Fabian Ryffel
+  instrument: Chuchi
+  rufname: Ryffel
+  dabei_seit: 2014
+- id: helen-signer
+  name: Helen Signer
+  instrument: Sousaphon
+  rufname: Helenchen / Lolo
+  aufgabe: domm schnorre
+  spruch: Es frisst ein jeder was er kann... Ran!
+  hobbys: Tattoos, Gugge, Lesen
+  dabei_seit: 2000
+- id: janine-mosimann
+  name: Janine Mosimann
+  instrument: Hörnli
+  rufname: Schniin
+  aufgabe: Schminken
+  spruch: Da isch was anders!!
+  hobbys: Gugge, Mole, undundund...
+  dabei_seit: 2006
+- id: juergen-rottach
+  name: Jürgen Rottach
+  instrument: Sousaphon
+  rufname: Jürgsche, Ghana
+  aufgabe: Bassör
+  spruch: Hoptsach de Hond isch gsond.
+  hobbys: Inlinen, Velofahren, öchli Musig mache
+  dabei_seit: 2000
+- id: kira-schaffluetzel
+  name: Kira Schafflützel
+  instrument: Cinellen
+  aufgabe: gueti lune verbreita
+  hobbys: schlager losa, guggemusik, boarde und teeniesitte
+  dabei_seit: 2015
+- id: lea-berger
+  name: Lea Berger
+  instrument: Posaune
+  rufname: Tigerlii
+  aufgabe: Gueti Luune verbreite, Schminkteam, Guggecoiffeuse
+  spruch: Heeyy alles klar?
+  hobbys: Kino, Usgang, Fründe
+  dabei_seit: 2014
+- id: lea-lieberherr
+  name: Lea Lieberherr
+  instrument: Trompete
+  aufgabe: Trompete spiele xP
+  spruch: läuft bei uns!
+  hobbys: Guggenmusik
+  dabei_seit: 2015
+- id: manuel-hutter
+  name: Manuel Hutter
+  instrument: Posaune
+  rufname: Manuel
+  aufgabe: "Öffentlichkeitsarbeit, Schminkteam"
+  spruch: Nememer no ein?
+  hobbys: Gugge, Usgang
+  dabei_seit: 2008
+- id: manuela-piroutz
+  name: Manuela Piroutz
+  instrument: Woodblocks
+  rufname: Manu
+  spruch: Mä lebt nur eimol
+  hobbys: Reisen, Lesen
+  dabei_seit: 2015
+- id: manuela-waespi
+  name: Manuela Wäspi
+  instrument: Saxophon
+  rufname: Manuela
+  aufgabe: Kindergugge
+  spruch: Super!
+  hobbys: Kinder und Gugge
+  dabei_seit: 1999
+- id: marco-signer
+  name: Marco Signer
+  instrument: Pauke
+  rufname: Sigi, Erwin
+  spruch: I live for the weekend!
+  hobbys: Inline-Skating, Tischtennis, Beachvolleyball
+  dabei_seit: 2009
+- id: melanie-bless
+  name: Melanie Bless
+  instrument: Cinellen
+  rufname: Meli, Bläss
+  spruch: lebe jeden tag als wers dein letzter
+  hobbys: gugge, in der natur sein
+  dabei_seit: 2014
+- id: michael-rechsteiner
+  name: Michael Rechsteiner
+  instrument: Sousaphon
+  rufname: Micheli
+  spruch: Bisch bsoffe und willsch heim, gohsch is Izi-Beizli do fühlschdi dehei!
+  hobbys: Unihockey , Modelleisenbahn, Tennis, Guggemusig, Kochen
+  dabei_seit: 2011
+- id: michelle-manser
+  name: Michelle Manser
+  instrument: Trompete
+  rufname: Michelle
+  hobbys: Gugge, Familie und Handwerklichs usprobiere ;)
+  dabei_seit: 2015
+- id: nadine-zanvit-portmann
+  name: Nadine Zanvit Portmann
+  instrument: Posaune
+  rufname: Nadine
+  hobbys: Familie, Gugge
+  dabei_seit: 2014
+- id: oriana-fernandes
+  name: Oriana Fernandes
+  instrument: Trompete
+  dabei_seit: 2014
+- id: paola-sagrafena
+  name: Paola Sagrafena
+  instrument: Trompete
+  rufname: Willy Wonka
+  hobbys: Gugge, Kegeln
+  dabei_seit: 2004
+- id: raffaela-keller
+  name: Raffaela Keller
+  instrument: Trompete
+  rufname: Raffi
+  spruch: Zick zack Zwiback, tätsch bäng märeng
+  hobbys: familiä und fründä
+  dabei_seit: 2015
+- id: ramona-koller
+  name: Ramona Koller
+  instrument: Trompete
+  rufname: Mona, Möndli
+  aufgabe: Güügälä
+  spruch: I bi nöd chli sondern es Konzentrat!
+  hobbys: Schüsse, Guggä, Usgang
+  dabei_seit: 2015
+- id: ramona-zingali
+  name: Ramona Zingali
+  instrument: Hörnli
+  rufname: Ramona
+  aufgabe: Präsidentin, Schminkteam
+  hobbys: Läsä
+  dabei_seit: 2006
+- id: rene-hoehener
+  name: René Höhener
+  instrument: Trompete
+  rufname: Pauke-René
+  spruch: Freu mi im Sommer scho of Fasnacht
+  hobbys: Gugge, wandere, fotografieren, biken, schwimmen
+  dabei_seit: 2012
+- id: roger-kehl
+  name: Roger Kehl
+  instrument: Chuchi
+  rufname: Roschee
+  aufgabe: Vize-Präsi, Tourenchef
+  spruch: Ha no möse mit em Hund go laufe!
+  hobbys: Gugge, Unihockey
+  dabei_seit: 1998 (vorher Kindermitglied)
+- id: roman-waespi
+  name: Roman Wäspi
+  instrument: Posaune
+  rufname: Roman
+  aufgabe: Schnitzelbänke, Revisor
+  spruch: Mit Härzbluet debii...
+  hobbys: Fasnacht und vieles mehr!
+  dabei_seit: 2000
+- id: sabrina-wuest
+  name: Sabrina Wüst
+  instrument: Posaune
+  rufname: Sabrina
+  hobbys: Gugge, Freunde treffen, Kino
+  dabei_seit: 2004
+- id: sandra-heim
+  name: Sandra Heim
+  instrument: Trompete
+  aufgabe: Organisator, Schminkteam
+  hobbys: Min Zoo
+  dabei_seit: 2010
+- id: sara-sagrafena
+  name: Sara Sagrafena
+  instrument: Woodblocks
+  rufname: Sara
+  hobbys: Tanzen, Gugge, Kino
+  dabei_seit: 2004
+- id: seraina-schuler
+  name: Seraina Schuler
+  instrument: Posaune
+  aufgabe: Bloose!
+  spruch: Nehmed mer en Schnupf??
+  hobbys: Guggä, Boarde, Usgang, Fründe... usw.
+  dabei_seit: 2011
+- id: silvio-zehnder
+  name: Silvio Zehnder
+  instrument: Sousaphon
+  rufname: Sanitäter
+  spruch: Take it easy nimms leicht
+  hobbys: Aikido, Motorradfahren
+  dabei_seit: 2015
+- id: stefan-heim
+  name: Stefan Heim
+  instrument: Chuchi
+  rufname: Stefan
+  dabei_seit: 2015
+- id: tamara-burri
+  name: Tamara Burri
+  instrument: Trompete
+  spruch: Ich brauche keine 4 Jahreszeiten, die 5te reicht.
+  hobbys: Gugge, Ausflüge
+  dabei_seit: 2015
+- id: urs-baumann
+  name: Urs Baumann
+  instrument: Posaune
+  rufname: Urs
+  aufgabe: Lagerchef, falsch drii spile
+  spruch: I ha nöd er hed au
+  hobbys: Gugge
+  dabei_seit: 2004 (vorher Kindermitglied)
+- id: vanessa-signer
+  name: Vanessa Signer
+  instrument: Cinellen
+  rufname: Vany
+  spruch: Was wir empfinden ist viel wichtiger als was wir wissen.
+  hobbys: Spörtle, mit de Familie und Freund Ziit verbringe
+  dabei_seit: 2013
+- id: vincenzo-zingali
+  name: Vincenzo Zingali
+  instrument: Trompete
+  rufname: Which
+  aufgabe: Musikalischer Leiter, Aktuar
+  spruch: jiha!
+  hobbys: Tschutte
+  dabei_seit: 1997 (vorher Kindermitglied)
