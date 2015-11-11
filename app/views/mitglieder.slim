@@ -4,7 +4,7 @@
     - settings.mitglieder.each do |m|
       .col-xs-6.col-sm-4.col-md-3.col-lg-2
         .thumbnail
-          a data-toggle="modal" data-target="#modal-#{m['id']}"
+          a href="#" data-toggle="modal" data-target="#modal-#{m['id']}"
             img.img-circle src=url("/img/mitglieder/tn-#{m['id']}.jpg") alt=m['name'] data-retina=url("/img/mitglieder/tn-#{m['id']}@2.jpg")
           .caption.text-center = m['name']
 
@@ -13,7 +13,7 @@
           .modal-content
             .modal-header
               button.close type="button" data-dismiss="modal" aria-label="Schliessen"
-                span aria-hidden="true" &times
+                span aria-hidden="true" &times;
               h4.modal-title id="modal-#{m['id']}-label"
                 = m['name']
                 small< = m['instrument']
