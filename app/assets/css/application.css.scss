@@ -20,6 +20,10 @@ img {
   height: auto;
 }
 
+.thumbnail.white {
+  background-color: #fff;
+}
+
 // Highlight Navbar active Link
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
