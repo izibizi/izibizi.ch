@@ -2,22 +2,87 @@
 #   gigs:
 #     - was: Fasnachtseröffnung
 #       wo: Herisau
-
-- datum: Fr, 21.02.2014
+# - datum: Do, 20.02.2014
+#   gigs:
+#     - was: BzT
+#       wo: Herisau
+#     - zeit: "20:00"
+#       was: Georgs
+---
+- datum: Fr, 13.11.2015
   gigs:
-    - was: Beizentour
-      wo: Herisau
+    - was: <a href="https://www.facebook.com/events/1460923284216718/">Plakettenenthüllung</a>
+      wo: Chälblihalle, Herisau
+      zeit: "19:00"
+
+- datum: Sa, 09.01.2016
+  gigs:
+    - was: Mega Gugger Night
+      wo: Gams
+
+- datum: Sa, 16.01.2016
+  gigs:
+    - was: Gugge Fescht
+      wo: Waldstatt
+
+- datum: Fr, 22.01.2016
+  gigs:
     - zeit: "20:00"
-      was: Georgs
-    - zeit: "20:45"
-      was: Adler
-    - zeit: "21:30"
-      was: Bauhof
-    - zeit: "22:15"
-      was: Amadeus
-    - zeit: "23:00"
-      was: Bädli
-    - zeit: "23:45"
-      was: Yellow
-    - zeit: "00:30"
-      was: Rechberg
+      was: <a href="https://www.facebook.com/events/1653595888230904/">Maskenball</a>
+      wo: Dicken
+
+- datum: Fr, 29.01.2016
+  gigs:
+    - was: Guggen Classic
+      wo: Lenggenwil
+
+- datum: Sa, 30.01.2016
+  gigs:
+    - was: Sauknapp Party
+      wo: Herisau
+
+- datum: So, 31.01.2016
+  gigs:
+    - was: Umzug
+      wo: Lenggenwil
+
+- datum: SchmuDo, 04.02.2016
+  gigs:
+    - was: SchmuDo
+      wo: Appenzell
+
+- datum: Sa, 06.02.2016
+  gigs:
+    - was: Tschätteri
+      wo: Altstätten
+
+- datum: So, 07.02.2016
+  gigs:
+    - was: Umzug
+      wo: Altstätten
+
+- datum: Aschermittwoch, 10.02.2016
+  gigs:
+    - was: Umzug
+      wo: Herisau
+      zeit: "15:00"
+
+- datum: Do, 11.02.2016
+  gigs:
+    - was: Schnitzelbank-Abend 2016
+      wo: Altes Zeughaus, Herisau
+
+- datum: Fr, 12.02.2016
+  gigs:
+    - was: Maskenball
+      wo: Rehtobel
+
+- datum: Sa, 13.02.2016
+  gigs:
+    - was: <a href="https://www.facebook.com/events/408924002645636/">Guggeball</a>
+      wo: Chälblihalle, Herisau
+
+- datum: So, 14.02.2016
+  gigs:
+    - was: <a href="http://www.gugge-troeffe.ch/">Gugge-Tröffä</a>
+      wo: Herisau
