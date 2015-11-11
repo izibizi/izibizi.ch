@@ -37,3 +37,7 @@ configure :development do
 end
 
 require './app/routes'
+
+not_found do
+  slim :'404'
+end
