@@ -5,12 +5,7 @@ $(document).ready(function() {
   // check if we have a retina screen
   if (window.matchMedia && window.matchMedia(pixelRatio).matches) {
     $('img[data-retina]').each(function() {
-      var img = $(this)
-      var originalWidth = img.width();
-      var originalHeight = img.height();
-      img.attr('src', img.data('retina'));
-      img.width(originalWidth);
-      img.height(originalHeight);
+      $(this).attr('src', $(this).data('retina'));
     });
   };
 });

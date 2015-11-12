@@ -29,11 +29,16 @@ configure do
     config.prefix       = '/assets'
     config.digest       = true
     config.public_path  = settings.public_folder
+    config.asset_host   = ENV['ASSET_HOST'] if ENV['ASSET_HOST']
   end
 end
 
 configure :development do
   Slim::Engine.set_options pretty: true, sort_attrs: false
+end
+
+configure :production do
+  set :static_cache_control, [:public, max_age: 60*60*24*30]
 end
 
 require './app/routes'

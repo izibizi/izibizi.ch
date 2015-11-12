@@ -5,7 +5,7 @@
       .col-xs-6.col-sm-4.col-md-3.col-lg-2
         .thumbnail
           a href="#" data-toggle="modal" data-target="#modal-#{m['id']}"
-            img.img-circle src=url("/img/mitglieder/tn-#{m['id']}.jpg") alt=m['name'] data-retina=url("/img/mitglieder/tn-#{m['id']}@2.jpg")
+            img.img-circle src=image_path("mitglieder/tn-#{m['id']}.jpg") alt=m['name'] data-retina=image_path("mitglieder/tn-#{m['id']}@2.jpg")
           .caption.text-center = m['name']
 
       .modal.fade.mitglied-modal id="modal-#{m['id']}" tabindex="-1" role="dialog" aria-labelledby="modal-#{m['id']}-label"
@@ -20,7 +20,7 @@
             .modal-body
               .row
                 .col-sm-12.col-md-5.text-center
-                  img.img-thumbnail src="/img/mitglieder/#{m['id']}.jpg" alt=m['name']
+                  img.img-thumbnail src=image_path("mitglieder/#{m['id']}.jpg") alt=m['name'] data-retina=image_path("mitglieder/#{m['id']}@2.jpg")
                 .col-sm-12.col-md-7
                   dl.dl-horizontal
                     - if m['rufname']
