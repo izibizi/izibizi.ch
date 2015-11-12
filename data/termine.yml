@@ -46,7 +46,7 @@
     - was: Umzug
       wo: Lenggenwil
 
-- datum: SchmuDo, 04.02.2016
+- datum: Do, 04.02.2016
   gigs:
     - was: SchmuDo
       wo: Appenzell
@@ -61,10 +61,11 @@
     - was: Umzug
       wo: Altstätten
 
-- datum: Aschermittwoch, 10.02.2016
+- datum: Mi, 10.02.2016
   gigs:
-    - was: Umzug
+    - was: Aschermittwoch
       wo: Herisau
+    - was: Umzug
       zeit: "15:00"
 
 - datum: Do, 11.02.2016

@@ -1,17 +1,18 @@
 - if settings.termine.any?
-  table.table.table.striped.termine-table
-    thead
-      tr
-        th colspan="2" Wann
-        th Was
-        th Wo
-    tbody
-      - settings.termine.each do |termin|
+  .table-responsive
+    table.table.table.striped.termine-table
+      thead
         tr
-          td = termin['datum']
-          td == termin['gigs'].map { |gig| gig['zeit'] }.join('<br>')
-          td == termin['gigs'].map { |gig| gig['was'] }.join('<br>')
-          td == termin['gigs'].map { |gig| gig['wo'] }.join('<br>')
+          th colspan="2" Wann
+          th Was
+          th Wo
+      tbody
+        - settings.termine.each do |termin|
+          tr
+            td = termin['datum']
+            td == termin['gigs'].map { |gig| gig['zeit'] }.join('<br>')
+            td == termin['gigs'].map { |gig| gig['was'] }.join('<br>')
+            td == termin['gigs'].map { |gig| gig['wo'] }.join('<br>')
 
 - else
   .termine
