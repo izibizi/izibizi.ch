@@ -14,5 +14,12 @@ nav.navbar.navbar-inverse.navbar-fixed-top
         == menu_link '/mitglieder', 'Mitglieder'
         == menu_link '/gaestebuch', 'Gästebuch'
         == menu_link '/bilder',     'Bilder'
+        li.dropdown
+          a.dropdown-toggle href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
+            ' Schnitzelbänke
+            span.caret
+          ul.dropdown-menu
+            - settings.schnitzelbank.keys.each do |id|
+              == menu_link "/schnitzelbank/#{id}", id
         == menu_link '/links',      'Links'
         == menu_link '/vhg',        'VHG'

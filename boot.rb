@@ -8,9 +8,26 @@ require './config/sprockets'
 require './app/helpers'
 helpers Helpers
 
-def self.load_data(type)
-  path = File.expand_path("../data/#{type}.yml", __FILE__)
-  YAML.load(open(path).read) if File.exist?(path)
+module DataLoaders
+  def self.load_data(type)
+    path = File.expand_path("../data/#{type}.yml", __FILE__)
+    YAML.load(open(path).read) if File.exist?(path)
+  end
+
+  def self.load_schnitzelbank_data
+    files = File.expand_path('../data/schnitzelbank/*.md', __FILE__)
+    Dir.glob(files).map do |file|
+      name = File.basename(file, '.md')
+      text = open(file).read
+      [name, convert(text)]
+    end.to_h
+  end
+
+  private
+
+  def self.convert(markdown)
+    Kramdown::Document.new(markdown, auto_ids: false).to_html
+  end
 end
 
 configure do
@@ -21,8 +38,9 @@ configure do
                                      settings.production)
 
   # load static data
-  set :termine, load_data(:termine) || []
-  set :mitglieder, load_data(:mitglieder).sort_by { |m| m['id'] }
+  set :termine, DataLoaders.load_data(:termine) || []
+  set :mitglieder, DataLoaders.load_data(:mitglieder).sort_by { |m| m['id'] }
+  set :schnitzelbank, DataLoaders.load_schnitzelbank_data
 
   Sprockets::Helpers.configure do |config|
     config.environment  = settings.assets

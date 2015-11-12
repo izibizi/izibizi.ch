@@ -8,4 +8,9 @@ $(document).ready(function() {
       $(this).attr('src', $(this).data('retina'));
     });
   };
+
+  // automatically open dropdowns on hover
+  $('.dropdown').hover(function () {
+    $(($(this)[0]).firstElementChild).dropdown('toggle');
+  })
 });

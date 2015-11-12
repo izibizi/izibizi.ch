@@ -27,6 +27,7 @@ GEM
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
     json (1.8.3)
+    kramdown (1.9.0)
     listen (3.0.3)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -93,6 +94,7 @@ DEPENDENCIES
   bootstrap-sass
   guard
   guard-rspec
+  kramdown
   pry
   puma
   rack-test

@@ -8,6 +8,7 @@ group :app do
   gem 'sinatra'
   gem 'slim'
   gem 'sprockets-helpers'
+  gem 'kramdown'
 end
 
 group :assets do
