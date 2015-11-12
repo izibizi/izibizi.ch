@@ -5,9 +5,10 @@ get('/') { slim :index }
 end
 
 get('/schnitzelbank/:id') do
-  pass unless settings.schnitzelbank.has_key?(params[:id])
-  slim :schnitzelbank, locals: {
-    title: params[:id],
-    content: settings.schnitzelbank[params[:id]]
-  }
+  @year = params[:id]
+  pass unless settings.schnitzelbank.has_key?(@year)
+  @title = "Schnitzelbänke #{@year}"
+  @description = "Die Schnitzelbänke des Jahres #{@year}"
+  @content = settings.schnitzelbank[@year]
+  slim :schnitzelbank
 end

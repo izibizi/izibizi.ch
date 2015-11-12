@@ -31,11 +31,10 @@ module DataLoaders
 end
 
 configure do
-  set :production, ENV['RACK_ENV'].eql?('production')
   set :app_root, File.expand_path('..', __FILE__)
   set :views, File.join(settings.app_root, 'app/views')
   set :assets, AssetsEnvironment.get(settings.app_root,
-                                     settings.production)
+                                     production?)
 
   # load static data
   set :termine, DataLoaders.load_data(:termine) || []
@@ -56,9 +55,14 @@ configure :development do
 end
 
 configure :production do
-  set :static_cache_control, [:public, max_age: 60*60*24*30]
+  set :static_cache_control, [:public, max_age: 60 * 60 * 24 * 30]
 end
 
+before do
+  # Default values
+  @title = nil
+  @description = 'Die Guggenmusig Izi bizi tini wini macht seit 1986 die Fasnacht in Herisau und Umgebung unsicher. Die Freude an der Musik und der Gemeinschaftsgedanke stehen dabei im Vordergrund.'
+end
 require './app/routes'
 
 not_found do

@@ -1,6 +1,11 @@
 module Helpers
   include Sprockets::Helpers
 
+  # Page title
+  def title(base)
+    [@title, base].compact.join(' &middot; ')
+  end
+
   # Menu Item
   def menu_link(path, text)
     active = request.path_info.eql?(path) ? ' class="active"' : ''
