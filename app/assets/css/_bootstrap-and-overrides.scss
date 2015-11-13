@@ -15,6 +15,10 @@ $close-color: #fff;
 
 $page-header-border-color: lighten($body-bg, 12%);
 
+// Navbar collapse
+$grid-float-breakpoint: 835px;
+$grid-float-breakpoint-max: 834px;
+
 $modal-content-bg: $body-bg;
 $modal-header-border-color: $page-header-border-color;
 
