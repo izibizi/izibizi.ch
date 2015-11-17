@@ -17,14 +17,18 @@ RSpec.describe 'Website' do
     end
   end
 
-  it 'sets the correct title' do
+  it 'has sites with correct titles' do
     base_title = 'GM Izi bizi tini wini'
     data = {
       '/mitglieder' => 'Mitglieder',
       '/vhg' => 'VHG und Gugge-Tröffe',
       '/gaestebuch' => 'Gästebuch',
       '/bilder' => 'Bilder',
+      '/schnitzelbank/2009' => 'Schnitzelbänke 2009',
       '/schnitzelbank/2012' => 'Schnitzelbänke 2012',
+      '/schnitzelbank/2013' => 'Schnitzelbänke 2013',
+      '/schnitzelbank/2015' => 'Schnitzelbänke 2015',
+      '/impressum' => 'Impressum'
     }
 
     data.each do |path, subtitle|

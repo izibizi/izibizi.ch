@@ -1,6 +1,6 @@
 get('/') { slim :index }
 
-%i{gaestebuch bilder links mitglieder vhg passiv}.each do |p|
+%i{gaestebuch bilder links mitglieder vhg passiv impressum}.each do |p|
   get("/#{p}") { slim p }
 end
 
