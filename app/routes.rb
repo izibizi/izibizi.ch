@@ -1,5 +1,10 @@
 get('/') { slim :index }
 
+# Remove trailing slashes from routes
+get('*/') do |path|
+  redirect to(path), 301
+end
+
 %i{gaestebuch bilder links mitglieder vhg passiv impressum}.each do |p|
   get("/#{p}") { slim p }
 end
