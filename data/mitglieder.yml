@@ -111,13 +111,6 @@
   spruch: Heeyy alles klar?
   hobbys: Kino, Usgang, Fründe
   dabei_seit: 2014
-- id: lea-lieberherr
-  name: Lea Lieberherr
-  instrument: Trompete
-  aufgabe: Trompete spiele xP
-  spruch: läuft bei uns!
-  hobbys: Guggenmusik
-  dabei_seit: 2015
 - id: manuel-hutter
   name: Manuel Hutter
   instrument: Posaune
@@ -173,10 +166,6 @@
   instrument: Posaune
   rufname: Nadine
   hobbys: Familie, Gugge
-  dabei_seit: 2014
-- id: oriana-fernandes
-  name: Oriana Fernandes
-  instrument: Trompete
   dabei_seit: 2014
 - id: paola-sagrafena
   name: Paola Sagrafena
