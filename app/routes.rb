@@ -1,5 +1,10 @@
 get('/') { slim :index }
 
+# Redirect old member links
+get('/mitglieder/*') do
+  redirect to('/mitglieder'), 301
+end
+
 # Remove trailing slashes from routes
 get('*/') do |path|
   redirect to(path), 301
