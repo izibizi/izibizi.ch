@@ -4,11 +4,17 @@ html lang="de"
     meta charset="utf-8"
     meta http-equiv="X-UA-Compatible" content="IE=edge"
     meta name="viewport" content="width=device-width, initial-scale=1"
+
+    title == title('GM Izi bizi tini wini')
     meta name="description" content=@description
     meta name="keywords" content="Guggemusig Izi bizi tini wini Herisau, Izi bizi tini wini, Guggemusig, Herisau, Gugge-Tröffe"
-    title == title('GM Izi bizi tini wini')
-    link rel="shortcut icon" href="/favicon.png"
-    == stylesheet 'application'
+    meta property="og:title" content="Izi biz tini wini, Herisau"
+    meta property="og:url" content="http://www.izibizi.ch/"
+    meta property="og:image" content=url('/img/logo.png')
+    meta property="og:type" content="website"
+    meta property="og:locale" content="de_CH"
+    meta property="og:description" content=@description
+
     script type="application/ld+json"
       |{
       | "@context":"https://schema.org/",
@@ -18,6 +24,9 @@ html lang="de"
       | "sameAs":["https://www.facebook.com/gmizibizi"],
       | "logo":"#{url('/img/logo.png')}"
       |}
+
+    link rel="shortcut icon" href="/favicon.png"
+    == stylesheet 'application'
     
   body
     == slim :_nav
