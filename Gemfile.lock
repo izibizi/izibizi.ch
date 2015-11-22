@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.3.8)
     autoprefixer-rails (6.1.0.1)
       execjs
       json
@@ -8,6 +9,8 @@ GEM
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.3.0)
     coderay (1.1.0)
+    crack (0.4.2)
+      safe_yaml (~> 1.0.0)
     diff-lcs (1.2.5)
     execjs (2.6.0)
     ffi (1.9.10)
@@ -26,6 +29,7 @@ GEM
       guard (~> 2.1)
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
+    hashdiff (0.2.3)
     httparty (0.13.7)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
@@ -68,6 +72,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.4.0)
     rspec-support (3.4.0)
+    safe_yaml (1.0.4)
     sass (3.4.19)
     shellany (0.0.1)
     shotgun (0.9.1)
@@ -90,6 +95,10 @@ GEM
     uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    webmock (1.22.3)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff
 
 PLATFORMS
   ruby
@@ -112,6 +121,7 @@ DEPENDENCIES
   sprockets
   sprockets-helpers
   uglifier
+  webmock
 
 BUNDLED WITH
    1.10.6

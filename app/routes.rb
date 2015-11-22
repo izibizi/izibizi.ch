@@ -20,6 +20,12 @@ get '/bilder' do
   slim :'bilder/index'
 end
 
+get '/bilder/:id' do
+  album_id = params[:id].to_i
+  @album = settings.facebook.album(album_id)
+  slim :'bilder/show'
+end
+
 get('/schnitzelbank/:id') do
   @year = params[:id]
   pass unless settings.schnitzelbank.has_key?(@year)

@@ -23,9 +23,13 @@ group :development, :test do
   gem 'rake'
   gem 'shotgun'
   gem 'rspec'
-  gem 'rack-test'
   gem 'guard', require: false
   gem 'guard-rspec', require: false
+end
+
+group :test do
+  gem 'rack-test'
+  gem 'webmock'
 end
 
 # vi: syntax=ruby

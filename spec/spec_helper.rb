@@ -2,12 +2,20 @@
 ENV['RACK_ENV'] = 'test'
 require File.expand_path('../../boot.rb', __FILE__)
 require 'rack/test'
+require 'webmock/rspec'
 
 RSpec.configure do |config|
   include Rack::Test::Methods
+  WebMock.disable_net_connect!
+  config.backtrace_exclusion_patterns << /\.bundle/
 
   def app
     Sinatra::Application
+  end
+
+  def web_response(name)
+    path = File.expand_path("../fixtures/requests/#{name}.txt", __FILE__)
+    File.new(path)
   end
 
   config.expect_with :rspec do |expectations|

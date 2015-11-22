@@ -23,7 +23,6 @@ RSpec.describe 'Website' do
       '/mitglieder' => 'Mitglieder',
       '/vhg' => 'VHG und Gugge-Tröffe',
       '/gaestebuch' => 'Gästebuch',
-      '/bilder' => 'Bilder',
       '/schnitzelbank/2009' => 'Schnitzelbänke 2009',
       '/schnitzelbank/2012' => 'Schnitzelbänke 2012',
       '/schnitzelbank/2013' => 'Schnitzelbänke 2013',

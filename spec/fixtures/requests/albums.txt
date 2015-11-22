@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=UTF-8
+ETag: "42bc03b0b51fb0498401fa493ba48d466e06e616"
+Pragma: no-cache
+Cache-Control: private, no-cache, no-store, must-revalidate
+Facebook-API-Version: v2.5
+Expires: Sat, 01 Jan 2000 00:00:00 GMT
+Date: Sun, 22 Nov 2015 13:56:31 GMT
+Connection: keep-alive
+Content-Length: 802
+
+{"data":[{"id":"310345352360243","name":"Cover Photos","cover_photo":{"id":"310557299005715"},"type":"cover"},{"id":"849607135100726","name":"Album 1","cover_photo":{"id":"849607141767392"},"type":"normal"},{"id":"849351858459587","name":"Album 2","cover_photo":{"id":"849351871792919"},"type":"normal"},{"id":"849335485127891","name":"Album 3","cover_photo":{"id":"849335525127887"},"type":"normal"}],"paging":{"cursors":{"before":"MzEwMzQ1MzUyMzYwMjQz","after":"ODQ5MzM1NDg1MTI3ODkx"},"next":"https:\/\/graph.facebook.com\/v2.5\/147853211942792\/albums?access_token=123\u00257cabc&fields=id\u00252Cname\u00252Ccover_photo.fields\u002528id\u002529\u00252Ctype&limit=4&after=ODQ5MzM1NDg1MTI3ODkx"}}
