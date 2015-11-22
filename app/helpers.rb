@@ -6,6 +6,13 @@ module Helpers
     [@title, base].compact.join(' &middot; ')
   end
 
+  # Prints a page title and sets the page title
+  def page_header(title, subtitle = nil)
+    @title = title
+    subtitle = " <small>#{subtitle}</small>" if subtitle
+    %(<h1 class="page-header">#{title}#{subtitle}</h1>)
+  end
+
   # Menu Item
   def menu_link(path, text)
     active = request.path_info.eql?(path) ? ' class="active"' : ''
