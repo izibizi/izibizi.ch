@@ -2,13 +2,13 @@ class Facebook
   include HTTParty
   base_uri 'https://graph.facebook.com'
 
-  def initialize(page_id, app_id, app_secret)
+  def initialize(page_id, access_token)
     @page_id = page_id
-    @credentials = { access_token: [app_id, app_secret].join('|') }
+    @credentials = { access_token: access_token }
   end
 
   def albums(opts = {})
-    query = { fields: 'id,name,cover_photo,type' }
+    query = { fields: 'id,name,cover_photo{id},type' }
       .merge(opts).merge(@credentials)
 
     response = self.class.get "/#{@page_id}/albums", { query: query }

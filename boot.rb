@@ -6,7 +6,6 @@ Bundler.require(:default, :app, ENV['RACK_ENV'].to_sym)
 require './config/sprockets'
 
 require './app/lib/facebook'
-
 require './app/helpers'
 helpers Helpers
 
@@ -55,8 +54,7 @@ configure do
   # FB API settings
   set :facebook, Facebook.new(
     ENV['FB_PAGE_ID'],
-    ENV['FB_APP_ID'],
-    ENV['FB_APP_SECRET']
+    ENV['FB_ACCESS_TOKEN']
   )
 
   Sprockets::Helpers.configure do |config|

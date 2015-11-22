@@ -5,10 +5,10 @@
 
   == slim :'bilder/_pager'
 
-  .row.album
+  .row.gallery
     - @albums.each do |album|
       .col-sm-6.col-md-4.col-lg-3
-        a.thumbnail href=url("/bilder/#{album['id']}")
+        a.thumbnail.album href=url("/bilder/#{album['id']}")
           span.thumbnail-image style="background-image: url(https://graph.facebook.com/#{album['cover_photo']['id']}/picture?type=normal);"
           = album['name'].split("\n").first
 
