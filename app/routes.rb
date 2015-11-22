@@ -15,8 +15,9 @@ end
 end
 
 get '/bilder' do
-  data = settings.facebook.albums(after: params[:after])
+  data = settings.facebook.albums(after: params[:after], before: params[:before])
   @albums = data['data']
+  @paging = data['paging']
   slim :'bilder/index'
 end
 

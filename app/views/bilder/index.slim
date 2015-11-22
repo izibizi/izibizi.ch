@@ -2,9 +2,14 @@
 .container
   == page_header 'Bilder', 'Izis bei der Arbeit! Oder so...'
   p.lead Du kannst dir die Bilder auch <a href="https://www.facebook.com/gmizibizi/photos_stream?tab=photos_albums">auf Facebook anschauen</a>!
+
+  == slim :'bilder/_pager'
+
   .row.album
     - @albums.each do |album|
       .col-sm-6.col-md-4.col-lg-3
         a.thumbnail href=url("/bilder/#{album['id']}")
           span.thumbnail-image style="background-image: url(https://graph.facebook.com/#{album['cover_photo']['id']}/picture?type=normal);"
           = album['name'].split("\n").first
+
+  == slim :'bilder/_pager'
