@@ -5,6 +5,8 @@ require 'bundler'
 Bundler.require(:default, :app, ENV['RACK_ENV'].to_sym)
 require './config/sprockets'
 
+require './app/lib/facebook'
+
 require './app/helpers'
 helpers Helpers
 
@@ -40,6 +42,22 @@ configure do
   set :termine, DataLoaders.load_data(:termine) || []
   set :mitglieder, DataLoaders.load_data(:mitglieder).sort_by { |m| m['id'] }
   set :schnitzelbank, DataLoaders.load_schnitzelbank_data
+
+  # load .env file
+  dotenv = File.join(settings.app_root, '.env')
+  if File.exist?(dotenv)
+    open(dotenv).read.lines do |line|
+      k, v = line.chomp.split('=')
+      ENV[k] = v
+    end
+  end
+
+  # FB API settings
+  set :facebook, Facebook.new(
+    ENV['FB_PAGE_ID'],
+    ENV['FB_APP_ID'],
+    ENV['FB_APP_SECRET']
+  )
 
   Sprockets::Helpers.configure do |config|
     config.environment  = settings.assets

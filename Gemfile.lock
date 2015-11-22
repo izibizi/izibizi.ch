@@ -26,6 +26,9 @@ GEM
       guard (~> 2.1)
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
+    httparty (0.13.7)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     json (1.8.3)
     kramdown (1.9.0)
     listen (3.0.4)
@@ -33,6 +36,7 @@ GEM
       rb-inotify (>= 0.9)
     lumberjack (1.0.9)
     method_source (0.8.2)
+    multi_xml (0.5.5)
     nenv (0.2.0)
     notiffany (0.0.8)
       nenv (~> 0.1)
@@ -94,6 +98,7 @@ DEPENDENCIES
   bootstrap-sass
   guard
   guard-rspec
+  httparty
   kramdown
   pry
   puma

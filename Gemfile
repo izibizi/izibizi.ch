@@ -9,6 +9,7 @@ group :app do
   gem 'slim'
   gem 'sprockets-helpers'
   gem 'kramdown'
+  gem 'httparty'
 end
 
 group :assets do

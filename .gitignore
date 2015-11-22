@@ -1,3 +1,4 @@
 tmp/
 public/assets/
 spec/examples.txt
+.env

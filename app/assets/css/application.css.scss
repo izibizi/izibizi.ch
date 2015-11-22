@@ -4,6 +4,8 @@ body { padding-top: 70px; }
 
 a {
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.3;
 }
 a:hover, a:focus {
   color: $blue;

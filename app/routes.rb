@@ -10,8 +10,14 @@ get('*/') do |path|
   redirect to(path), 301
 end
 
-%i{gaestebuch bilder links mitglieder vhg passiv impressum}.each do |p|
+%i{gaestebuch links mitglieder vhg passiv impressum}.each do |p|
   get("/#{p}") { slim p }
+end
+
+get '/bilder' do
+  data = settings.facebook.albums(after: params[:after])
+  @albums = data['data']
+  slim :'bilder/index'
 end
 
 get('/schnitzelbank/:id') do
