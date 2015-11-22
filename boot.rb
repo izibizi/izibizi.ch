@@ -44,7 +44,7 @@ configure do
   set :schnitzelbank, DataLoaders.load_schnitzelbank_data
 
   # load .env file
-  dotenv = File.join(settings.app_root, '.env')
+  dotenv = File.join(settings.app_root, '.env.'+settings.environment.to_s)
   if File.exist?(dotenv)
     open(dotenv).read.lines do |line|
       k, v = line.chomp.split('=')
