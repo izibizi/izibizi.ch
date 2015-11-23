@@ -1,7 +1,7 @@
 # izibizi.ch
 
 - **Staging:** https://izibizi-staging.herokuapp.com/
-- **Production:** _coming soon_
+- **Production:** http://www.izibizi.ch/
 
 ## Development
 
