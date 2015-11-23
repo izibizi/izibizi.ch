@@ -15,4 +15,17 @@ class Facebook
     response['data'].reject! { |row| row['type'] != 'normal' }
     response
   end
+
+  def album(id, opts = {})
+    paging = if opts[:after]
+      ".after(#{opts.delete(:after)})"
+    elsif opts[:before]
+      ".before(#{opts.delete(:before)})"
+    end
+
+    query = { fields: "id,name,link,photos#{paging}.limit(48){id,name}" }
+      .merge(opts).merge(@credentials)
+
+    self.class.get "/#{id}", { query: query }
+  end
 end

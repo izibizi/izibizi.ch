@@ -4,8 +4,12 @@
 
   p Album <a href="#{@album['link']}">auf Facebook anschauen</a>
 
+  == slim :'bilder/_pager'
+
   .row.gallery
     - @album['photos']['data'].each do |photo|
       .col-sm-6.col-md-4.col-lg-3
-        a.thumbnail.photo href=url("/bilder/#{photo['id']}")
+        a.thumbnail.photo href="https://graph.facebook.com/#{photo['id']}/picture?type=normal" data-lightbox=@album['id'] data-title=photo['name']
           span.thumbnail-image style="background-image: url(https://graph.facebook.com/#{photo['id']}/picture?type=normal);"
+
+  == slim :'bilder/_pager'

@@ -1,4 +1,12 @@
 //= require bootstrap-sprockets
+//= require lightbox/js/lightbox.min
+
+lightbox.option({
+  'fadeDuration': 100,
+  'resizeDuration': 100,
+  'positionFromTop': 100
+});
+
 $(document).ready(function() {
   // replace images with retina-variant
   var pixelRatio = "(-webkit-min-device-pixel-ratio: 1.5),(min--moz-device-pixel-ratio: 1.5),(-o-min-device-pixel-ratio: 3/2),(min-resolution: 1.5dppx)";

@@ -1,8 +1,8 @@
 nav
   ul.pager
     li.previous class=('disabled' unless @paging['previous'])
-      a href=url("/bilder?before=#{@paging['cursors']['before']}")
+      a href=url("#{request.path_info}?before=#{@paging['cursors']['before']}")
         span aria-hidden="true" &larr; Neuer
     li.next class=('disabled' unless @paging['next'])
-      a href=url("/bilder?after=#{@paging['cursors']['after']}")
+      a href=url("#{request.path_info}?after=#{@paging['cursors']['after']}")
         span aria-hidden="true" &Auml;lter &rarr;

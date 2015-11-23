@@ -30,4 +30,8 @@ module Helpers
     s = asset_path(s + '.js') unless s =~ /^(https?:\/)?\//
     %(<script src="#{s}"></script>)
   end
+
+  def paging_params
+    { after: params[:after], before: params[:before] }.reject { |_,v| v.nil? }
+  end
 end
