@@ -57,6 +57,9 @@ configure do
     ENV['FB_ACCESS_TOKEN']
   )
 
+  # GA settings
+  set :ga_id, ENV['GA_ID']
+
   Sprockets::Helpers.configure do |config|
     config.environment  = settings.assets
     config.prefix       = '/assets'
