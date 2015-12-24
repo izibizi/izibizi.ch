@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.3'
+ruby '2.2.4'
 
 gem 'pry'
 gem 'puma', group: :rackup
@@ -17,6 +17,7 @@ group :assets do
   gem 'sass'
   gem 'bootstrap-sass'
   gem 'uglifier'
+  gem 'therubyracer', platforms: :ruby
 end
 
 group :development, :test do

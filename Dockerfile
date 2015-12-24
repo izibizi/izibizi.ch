@@ -1,21 +1,21 @@
-FROM ruby:onbuild
+FROM ruby:2.2.4
 MAINTAINER mhutter "https://github.com/mhutter"
 
-ENV PORT=4567 \
+ENV PORT=3000 \
     LANG=C.UTF-8 \
     RACK_ENV=production
 
-# - install Foreman
-# - install node.js
-# - run script/build if present
-RUN gem install foreman \
- && curl -sSL -o node.tgz "https://nodejs.org/dist/v5.1.0/node-v5.1.0-linux-x64.tar.gz" \
- && mkdir -p /usr/src/node \
- && tar -xzf node.tgz -C /usr/src/node --strip-components=1 \
- && rm node.tgz \
- && ln -s /usr/src/node/bin/* /usr/local/bin/ \
- && (test -e script/build && script/build)
+# Set up workdir
+RUN mkdir -p /app
+WORKDIR /app
+
+# install dependencies
+COPY Gemfile /app/
+COPY Gemfile.lock /app/
+RUN bundle install --without development:test -j4 --deployment
+
+COPY . /app/
+RUN bundle exec rake assets
 
 EXPOSE ${PORT}
-
-CMD ["foreman","start","-d","/usr/src/app"]
+CMD bundle exec rackup config.ru -p ${PORT}
