@@ -13,17 +13,30 @@
   gigs:
     - was: Mega Gugger Night
       wo: Gams
+      zeit: "00:30"
 
 - datum: Sa, 16.01.2016
   gigs:
-    - was: Gugge Fescht
+    - was: <a href="https://www.facebook.com/events/1002602376463990/">Gugge Fescht</a>
       wo: Waldstatt
+    - zeit: "17:00"
+      was: Umzug
+    - zeit: "18:00"
+      was: Auftritt inkl. Kinder
+    - zeit: "21:00"
+      was: Auftritt
 
 - datum: Fr, 22.01.2016
   gigs:
     - zeit: "20:00"
       was: <a href="https://www.facebook.com/events/1653595888230904/">Maskenball</a>
       wo: Dicken
+
+- datum: Sa, 23.01.2016
+  gigs:
+    - zeit: "20:30"
+      was: <a href="https://www.facebook.com/events/1030630870320446/">Jubiläumsmaskenball"</a>
+      wo: Oberriet
 
 - datum: Fr, 29.01.2016
   gigs:
