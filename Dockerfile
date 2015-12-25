@@ -18,4 +18,6 @@ COPY . /app/
 RUN bundle exec rake assets
 
 EXPOSE ${PORT}
-CMD bundle exec rackup config.ru -p ${PORT}
+COPY config/deploy/docker-entrypoint.sh /run.sh
+ENTRYPOINT ["/run.sh"]
+CMD ["server"]
