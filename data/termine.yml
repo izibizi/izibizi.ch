@@ -9,12 +9,6 @@
 #     - zeit: "20:00"
 #       was: Georgs
 ---
-- datum: Sa, 09.01.2016
-  gigs:
-    - was: Mega Gugger Night
-      wo: Gams
-      zeit: "00:30"
-
 - datum: Sa, 16.01.2016
   gigs:
     - was: <a href="https://www.facebook.com/events/1002602376463990/">Gugge Fescht</a>
@@ -35,7 +29,7 @@
 - datum: Sa, 23.01.2016
   gigs:
     - zeit: "20:30"
-      was: <a href="https://www.facebook.com/events/1030630870320446/">Jubiläumsmaskenball"</a>
+      was: <a href="https://www.facebook.com/events/1030630870320446/">Jubiläumsmaskenball</a>
       wo: Oberriet
 
 - datum: Fr, 29.01.2016
@@ -46,12 +40,13 @@
 - datum: Sa, 30.01.2016
   gigs:
     - was: Sauknapp Party
+      zeit: "23:30"
       wo: Herisau
 
 - datum: So, 31.01.2016
   gigs:
-    - was: Umzug
-      wo: Lenggenwil
+    - was: ev. Umzug
+      wo: Feldkirch AT
 
 - datum: Do, 04.02.2016
   gigs:
@@ -78,7 +73,7 @@
 - datum: Do, 11.02.2016
   gigs:
     - was: Schnitzelbank-Abend 2016
-      wo: Altes Zeughaus, Herisau
+      wo: in und um Herisau
 
 - datum: Fr, 12.02.2016
   gigs:
@@ -87,6 +82,7 @@
       zeit: "20:30"
     - was: Maskenball
       wo: Rehtobel
+      zeit: "22:00"
 
 - datum: Sa, 13.02.2016
   gigs:
