@@ -63,7 +63,13 @@ img {
 
 // flyer
 #flyer {
-  margin-bottom: 30px;
+  transform: rotate(10deg);
+}
+
+// SchniBa-Abend
+.schniba-flyer-back {
+  max-width: 512px;
+  margin-left: 20px;
 }
 
 // own stuff
