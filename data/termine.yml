@@ -9,18 +9,6 @@
 #     - zeit: "20:00"
 #       was: Georgs
 ---
-- datum: Fr, 22.01.2016
-  gigs:
-    - zeit: "20:00"
-      was: <a href="https://www.facebook.com/events/1653595888230904/">Maskenball</a>
-      wo: Dicken
-
-- datum: Sa, 23.01.2016
-  gigs:
-    - zeit: "20:30"
-      was: <a href="https://www.facebook.com/events/1030630870320446/">Jubiläumsmaskenball</a>
-      wo: Oberriet
-
 - datum: Fr, 29.01.2016
   gigs:
     - was: Guggen Classic
