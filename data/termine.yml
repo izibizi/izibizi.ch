@@ -9,49 +9,89 @@
 #     - zeit: "20:00"
 #       was: Georgs
 ---
-- datum: Fr, 29.01.2016
-  gigs:
-    - was: Guggen Classic
-      wo: Lenggenwil
 
-- datum: Sa, 30.01.2016
+- datum: Mi, 03.02.2016
   gigs:
-    - was: Sauknapp Party
-      zeit: "23:30"
-      wo: Herisau
+    - was: <em>Schnitzelbänkler on Tour</em>
+      wo: Wiler Fasnachtseröffnung
 
-- datum: So, 31.01.2016
+- datum: Do, 04.02.2016
   gigs:
-    - was: ev. Umzug
-      wo: Feldkirch AT
-
+    - was: <em>Schnitzelbänkler on Tour</em>
+      wo: Flawil
 - datum: Do, 04.02.2016
   gigs:
     - was: SchmuDo
       wo: Appenzell
+    - zeit: "20:50"
+      was: Auftritt Sternenplatz
+    - zeit: "22:30"
+      was: Auftritt Plattenegg
+    - zeit: "23:50"
+      was: Auftritt Rathaus
 
+- datum: Fr, 05.02.2016
+  gigs:
+    - was: <em>Schnitzelbänkler on Tour</em>
+      wo: Gossauer Schnitzelbängg-Abend
+
+- datum: Sa, 06.02.2016
+  gigs:
+    - was: <em>Schnitzelbänkler on Tour</em>
+    - wo: Abtwil
+    - wo: Berneck oder St. Gallen
 - datum: Sa, 06.02.2016
   gigs:
     - was: Tschätteri
       wo: Altstätten
+    - zeit: "19:45"
+      was: Umzug Nr. 7
+    - zeit: "22:00"
+      was: Auftritt Marktgasse Mitte
+    - zeit: "23:00"
+      was: Auftritt Bühne Rathausplatz
+    - zeit: "00:30"
+      was: Auftritt Breite
 
 - datum: So, 07.02.2016
   gigs:
-    - was: Umzug
+    - was: Umzug Nr. 43
+      zeit: "14:11"
       wo: Altstätten
+
+- datum: Di, 09.02.2016
+  gigs:
+    - was: <em>Schnitzelbänkler on Tour</em>
+      wo: St. Gallen
 
 - datum: Mi, 10.02.2016
   gigs:
     - was: Aschermittwoch
       wo: Herisau
-    - was: Umzug
-      zeit: "15:00"
+    - zeit: "15:00"
+      was: Umzug
+    - zeit: "19:00"
+      was: Sternmarsch
+    - zeit: "19:40"
+      was: Monsterkonzert
+    - zeit: "20:30"
+      was: Tannenbaum
+    - zeit: "21:30"
+      was: Nordtrakt
+    - zeit: "22:20"
+      was: Angel's Bar
+    - zeit: "23:10"
+      was: Biercheller
 
 - datum: Do, 11.02.2016
   gigs:
     - was: <a href="/schniba-abend">Schnitzelbank-Abend 2016</a>
       wo: in und um Herisau
 
+- datum: Fr, 12.02.2016
+  gigs:
+    - was: <em>Schnitzelbänkler on Tour</em>
+      wo: Bischofszell
 - datum: Fr, 12.02.2016
   gigs:
     - was: <a href="http://www.saeglermaskenball.jimdo.com">Sägler Maskenball</a>
@@ -63,10 +103,27 @@
 
 - datum: Sa, 13.02.2016
   gigs:
+    - was: <em>Schnitzelbänkler on Tour</em>
+    - zeit: "20:00"
+      was: Jubiläum Thurgeier
+      wo: Bischofszell
+    - was: Guggetröffe
+      wo: Herisau
+- datum: Sa, 13.02.2016
+  gigs:
     - was: <a href="https://www.facebook.com/events/408924002645636/">Guggeball</a>
       wo: Chälblihalle, Herisau
+      zeit: "00:00"
 
 - datum: So, 14.02.2016
   gigs:
     - was: <a href="http://www.gugge-troeffe.ch/">Gugge-Tröffä</a>
       wo: Herisau
+    - zeit: "13:30"
+      was: Sternmarsch
+    - zeit: "14:00"
+      was: Begrüssung und Monsterkonzert
+    - zeit: "15:15"
+      was: Umzug
+    - zeit: "18:30"
+      was: Gidioverbrennung
