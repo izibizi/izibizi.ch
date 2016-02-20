@@ -3,6 +3,7 @@ ruby '2.3.0'
 
 gem 'pry'
 gem 'puma', group: :rackup
+gem 'rake'
 
 group :app do
   gem 'sinatra'
@@ -21,7 +22,6 @@ group :assets do
 end
 
 group :development, :test do
-  gem 'rake'
   gem 'shotgun'
   gem 'rspec'
   gem 'guard', require: false
