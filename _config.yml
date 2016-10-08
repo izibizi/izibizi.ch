@@ -1,0 +1,28 @@
+title: GM Izi bizi
+description: >
+  Die Guggenmusig Izi bizi tini wini macht seit 1986 die Fasnacht in Herisau
+  und Umgebung unsicher. Die Freude an der Musik und der Gemeinschaftsgedanke
+  stehen dabei im Vordergrund.
+author: Manuel Hutter (https://hutter.io)
+logo: /img/izi-logo.png
+baseurl: ''
+url: https://www.izibizi.ch
+
+# Defaults
+defaults:
+  - scope:
+      path: "" # anything
+    values:
+      layout: default
+
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
+
+gems:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude:
+  - Gemfile
+  - Gemfile.lock
