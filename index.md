@@ -4,7 +4,7 @@ Willkommen!
 auf der Homepage der
 Guggemusig Izi bizi tini wini
 
-Like uns auf [Facebook](https://fb.me/gmizibizi)
+Like uns auf [Facebook](https://fb.me/gmizibizi) und werde [Passivmitglied]({{ '/passiv' | prepend: site.baseurl }})
 
 ## Nächste Termine
 

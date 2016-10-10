@@ -41,6 +41,20 @@ h1 {
   }
 }
 
+img {
+  max-width: 100%;
+}
+.thumbnail {
+  display: block;
+  border: 1px solid $gold;
+  border-radius: 4px;
+  padding: 4px;
+  background: #fff;
+}
+.thumbnail:hover {
+  border-color: $red;
+}
+
 hr {
   border: 0;
   border-bottom: 1px solid $red;
