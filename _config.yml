@@ -8,6 +8,16 @@ logo: /img/izi-logo.png
 baseurl: ''
 url: https://www.izibizi.ch
 
+nav:
+  Home: /
+  Mitglieder: /mitglieder/
+  Bilder: /bilder/
+  Schnitzelbänke: /schnitzelbank/
+  Links: /links/
+  VHG: /vhg/
+
+permalink: pretty
+
 # Defaults
 defaults:
   - scope:

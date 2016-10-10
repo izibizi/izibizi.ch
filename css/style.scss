@@ -3,6 +3,8 @@
 
 $gold: hsl(48, 100, 60);
 $red: hsl(356, 92, 43);
+$bg: #333;
+$fg: #ddd;
 
 // 940 x 410
 $logo-width: 940px;
@@ -17,12 +19,11 @@ html, body {
 
 body {
   padding: 1.5rem 0.5rem;
-  background: #333;
+  background: $bg;
   border-top: 5px solid $red;
   box-shadow: inset 0 0 50px #000;
 
-  color: #ddd;
-  // font-size: 21pt;
+  color: $fg;
   font-size: calc(1em + 1vw);
   font-family: 'Fondamento',cursive;
   text-shadow: 0 1px 3px rgba(0,0,0,0.5);
@@ -34,6 +35,9 @@ body * + * {
 
 a, a:visited {
   color: $gold;
+}
+a:hover {
+  color: $red;
 }
 
 .container {
@@ -67,7 +71,7 @@ nav {
     background: $gold;
     padding: 1rem;
   }
-  a, a:visited {
+  a, a:visited, a:hover {
     color: #000;
   }
   .current {
@@ -87,6 +91,12 @@ nav {
 }
 
 footer {
+  margin-top: 10rem;
+  margin-bottom: 2rem;
   text-align: center;
   font-size: 0.8rem;
+  color: darken($fg, 20%);
+  a, a:visited {
+    color: darken($gold, 20%);
+  }
 }
