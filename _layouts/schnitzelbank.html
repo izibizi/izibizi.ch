@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<nav>
+  <ul>
+    {% for sb in site.schnitzelbank %}
+    <li><a href="{{ sb.url | prepend: site.baseurl }}"{% if sb.url == page.url %} class="current"{% endif %}>{{sb.year}}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
+
+<h1>Schnitzelbänke <small>{{ page.year }}</small></h1>
+
+{{ content }}

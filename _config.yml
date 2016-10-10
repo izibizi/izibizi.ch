@@ -18,12 +18,21 @@ nav:
 
 permalink: pretty
 
+collections:
+  schnitzelbank:
+    output: true
+
 # Defaults
 defaults:
   - scope:
       path: "" # anything
     values:
       layout: default
+  - scope:
+      path: "" # anything
+      type: schnitzelbank
+    values:
+      layout: schnitzelbank
 
 # Build settings
 markdown: kramdown
