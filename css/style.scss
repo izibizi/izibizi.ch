@@ -50,6 +50,41 @@ header {
   max-width: 470px;
 }
 
+nav {
+  text-align: center;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    margin-top: 2px;
+    border: 1px solid #000;
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    background: $gold;
+    padding: 1rem;
+  }
+  a, a:visited {
+    color: #000;
+  }
+  .current {
+    background: $red;
+  }
+}
+
+@media screen and (min-width: 740px) {
+  nav {
+    li {
+      display: inline-block;
+    }
+    a {
+      padding: 0.5rem 1rem;
+    }
+  }
+}
 
 footer {
   text-align: center;
