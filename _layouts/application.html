@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/css/style.css' | prepend: site.baseurl }}">
+  <link rel="shortcut icon" href="{{ '/favicon.png' | prepend: site.baseurl }}" type="image/png">
+</head>
+<body>
+
+{% include nav.html %}
+
+{{ content }}
+
+<footer class="container">
+  <p>&copy; 2016 GM Izi bizi tini wini</p>
+  <p>Code &amp; Design by <a href="https://hutter.io">Manuel Hutter</a></p>
+  <p>Hosting by <a href="https://order.cyon.ch/affiliate/8041982c-1745-41f7-94bc-bb67c7066785">cyon.ch</a></p>
+</footer>
+
+</body>
+</html>

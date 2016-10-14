@@ -1,0 +1,25 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 0;
+  background: $red;
+  z-index: 10;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    padding: 0 1rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  a:last-child {
+    border-right: none;
+  }
+  a, a:visited {
+    color: #fff;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}

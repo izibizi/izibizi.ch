@@ -1,0 +1,16 @@
+.hero {
+  background: $red;
+  height: 100%;
+  // width: 100%;
+  min-height: 310px;
+  position: relative;
+
+  div {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    padding: 0 1rem;
+    transform: translateY(-50%);
+  }
+}
