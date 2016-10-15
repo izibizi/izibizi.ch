@@ -1,9 +1,10 @@
 .hero {
-  background: $red;
   height: 100%;
   // width: 100%;
   min-height: 310px;
   position: relative;
+  background: $red; // fallback
+  background: linear-gradient(120deg, $gold 20%, $red 80%);
 
   div {
     position: absolute;
