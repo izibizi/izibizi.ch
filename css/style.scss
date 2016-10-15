@@ -5,7 +5,7 @@
 $gold: hsl(30, 60, 54);
 $red: hsl(0, 60, 54);
 $bg: #fff;
-$fg: hsl(184, 5, 45);
+$fg: hsl(184, 5, 35);
 
 // 940 x 410
 $logo-width: 940px;
@@ -49,6 +49,10 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   margin-top: 3rem;
+}
+
+strong {
+  color: #333;
 }
 
 img {
@@ -98,14 +102,13 @@ header {
 }
 
 footer {
-  margin-top: 10rem;
-  margin-bottom: 2rem;
+  margin: 5rem 0 0;
+  padding: 2rem 1rem;
+
   text-align: center;
   font-size: 0.8rem;
-  color: darken($fg, 20%);
-  a, a:visited {
-    color: darken($red, 20%);
-  }
+  background: #333;
+  color: #ccc;
 }
 
 .lead {
