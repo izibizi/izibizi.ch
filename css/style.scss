@@ -60,7 +60,7 @@ img {
 }
 .thumbnail {
   display: block;
-  border: 1px solid $gold;
+  border: 1px solid #eee;
   border-radius: 4px;
   padding: 4px;
   background: #fff;
@@ -71,8 +71,8 @@ img {
 
 hr {
   border: 0;
-  border-bottom: 1px solid $red;
-  margin: 0 20%;
+  border-bottom: 1px solid $gold;
+  margin: 2rem 20%;
 }
 
 a {
@@ -91,6 +91,9 @@ a:hover {
   margin: 0 auto;
   padding: 1.5rem 0.5rem;
 }
+.narrow.container {
+  max-width: 640px;
+}
 
 header {
   text-align: center;
@@ -107,8 +110,10 @@ footer {
 
   text-align: center;
   font-size: 0.8rem;
-  background: #333;
-  color: #ccc;
+  border-top: 1px solid #eee;
+  background: #f6f6f6;
+  color: lighten($fg, 20%);
+  opacity: 0.8;
 }
 
 .lead {
