@@ -4,4 +4,10 @@ title: Mitglieder
 
 <h1>Mitglieder</h1>
 
-All dem members!
+<ul>
+{% for mitglied in site.mitglieder %}
+  <li><a href="{{ mitglied.url | prepend: site.baseurl }}">{{ mitglied.name }}</a></li>
+{% endfor %}
+</ul>
+
+<pre>{{ site.static_files | jsonify }}</pre>

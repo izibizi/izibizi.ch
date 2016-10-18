@@ -11,6 +11,9 @@ $fg: hsl(184, 5, 35);
 $logo-width: 940px;
 $logo-height: 410px;
 
+@import "grid";
+@import "util";
+
 html, body {
   height: 100%;
   width: 100%;
@@ -58,16 +61,6 @@ strong {
 img {
   max-width: 100%;
 }
-.thumbnail {
-  display: block;
-  border: 1px solid #eee;
-  border-radius: 4px;
-  padding: 4px;
-  background: #fff;
-}
-.thumbnail:hover {
-  border-color: $red;
-}
 
 hr {
   border: 0;
@@ -84,15 +77,6 @@ a, a:visited {
 a:hover {
   color: $gold;
   text-decoration: underline;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 1.5rem 0.5rem;
-}
-.narrow.container {
-  max-width: 640px;
 }
 
 header {
@@ -121,4 +105,5 @@ footer {
 }
 
 @import "hero";
+@import "mitglieder";
 @import "nav";

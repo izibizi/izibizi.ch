@@ -21,6 +21,8 @@ permalink: pretty
 collections:
   schnitzelbank:
     output: true
+  mitglieder:
+    output: true
 
 # Defaults
 defaults:
@@ -33,6 +35,11 @@ defaults:
       type: schnitzelbank
     values:
       layout: schnitzelbank
+  - scope:
+      path: ""
+      type: mitglieder
+    values:
+      layout: mitglied
 
 # Build settings
 markdown: kramdown
@@ -44,4 +51,5 @@ gems:
   - jekyll-sitemap
 exclude:
   - Gemfile
+  - Rakefile
   - Gemfile.lock

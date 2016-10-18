@@ -1,0 +1,13 @@
+.thumbnail {
+  display: inline-block;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 4px;
+  background: #fff;
+}
+
+a.thumbnail:hover {
+  border-color: $red;
+}
+
+.center { text-align: center; }

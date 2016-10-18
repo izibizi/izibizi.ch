@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<h1>{{ page.name }} <small>{{ page.instrument }}</small></h1>
+
+<div class="member grid">
+  <div class="one-thirds unit center">
+    <img src="https://placekitten.com/580/800" alt="{{ page.name }}" class="thumbnail">
+  </div>
+  <div class="two-thirds unit">
+    {% if page.rufname %}
+      <dt>Rufname</dt>
+      <dd>{{ page.rufname }}</dd>
+    {% endif %}
+
+    {% if page.aufgabe %}
+      <dt>Aufgabe im Verein</dt>
+      <dd>{{ page.aufgabe }}</dd>
+    {% endif %}
+
+    {% if page.spruch %}
+      <dt>Spruch</dt>
+      <dd>{{ page.spruch }}</dd>
+    {% endif %}
+
+    {% if page.hobbys %}
+      <dt>Hobbys</dt>
+      <dd>{{ page.hobbys }}</dd>
+    {% endif %}
+
+    {% if page.dabei_seit %}
+      <dt>Dabei seit</dt>
+      <dd>{{ page.dabei_seit }}</dd>
+    {% endif %}
+  </div>
+</div>
