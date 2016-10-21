@@ -1,4 +1,24 @@
+$tn_size: 140px;
+
+.members {
+  text-align: center;
+  img {
+    max-width: $tn_size;
+  }
+  div {
+    min-height: 52px;
+    padding-bottom: 1rem;
+  }
+}
+
 .member {
+  .placeholder {
+    color: #eee;
+    width: 100%;
+    max-width: 290px;
+    background: $red; // fallback
+    background: linear-gradient(120deg, $gold 20%, $red 80%);
+  }
   img {
     width: 100%;
     max-width: 290px;
@@ -9,5 +29,10 @@
     width: 180px;
     float: left;
     clear: both;
+    text-align: right;
+    padding-right: 1rem;
+  }
+  dd {
+    margin-left: 180px;
   }
 }

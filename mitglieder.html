@@ -4,10 +4,11 @@ title: Mitglieder
 
 <h1>Mitglieder</h1>
 
-<ul>
-{% for mitglied in site.mitglieder %}
-  <li><a href="{{ mitglied.url | prepend: site.baseurl }}">{{ mitglied.name }}</a></li>
-{% endfor %}
-</ul>
-
-<pre>{{ site.static_files | jsonify }}</pre>
+<div class="members grid">
+  {% for mitglied in site.mitglieder %}
+    <a class="unit one-quarter" href="{{ mitglied.url | prepend: site.baseurl }}">
+      <img class="img-thumbnail img-circle" src="/img/mitglieder/tn-{{mitglied.slug}}.jpg" alt="{{mitglied.name}}">
+      <div>{{ mitglied.name }}</div>
+    </a>
+  {% endfor %}
+</div>

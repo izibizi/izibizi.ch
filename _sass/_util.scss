@@ -1,9 +1,8 @@
-.thumbnail {
-  display: inline-block;
-  border: 1px solid #eee;
-  border-radius: 4px;
-  padding: 4px;
-  background: #fff;
+.img-circle {
+  border-radius: 50%;
+}
+.img-thumbnail {
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 a.thumbnail:hover {

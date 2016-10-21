@@ -28,3 +28,32 @@ namespace :members do
 
   end
 end
+
+namespace :images do
+  desc 'optimize JPG and PNG images'
+  task :optimize do
+    system 'jpegoptim --strip-all --totals img/**/*.jpg'
+  end
+
+  desc 'generate missing thumbnail images'
+  task :generate_tn do
+    Dir.glob('img/mitglieder/*.jpg') do |img|
+      name = img.match(%r{([^/]+).jpg$})[1]
+      out = "img/mitglieder/tn-#{name}.jpg"
+
+      next if name =~ /^tn-/ || File.exist?(out)
+
+      cmd = "convert #{img} -resize '280x280^' -gravity center -extent 280x280 #{out}"
+      puts "----> #{cmd}"
+      system cmd
+    end
+  end
+
+  desc 'list unused images'
+  task :cleanup do
+    Dir.glob('img/mitglieder/*.jpg') do |img|
+      name = img.match(%r{([^/]+).jpg$})[1]
+      puts img unless File.exist? "_mitglieder/#{name}.md"
+    end
+  end
+end

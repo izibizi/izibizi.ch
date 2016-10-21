@@ -18,13 +18,13 @@
   clear: both;
 
   .unit {
+    display: block;
     float: left;
     width: 100%;
     padding: 1rem;
     margin: 0;
   }
-  // .unit:first-child { padding-left: 2rem; }
-  // .unit:last-child { padding-right: 2rem; }
+  .one-quarter { width: 50%; }
 }
 
 // clearfix after grids
@@ -36,7 +36,14 @@
 }
 .grid:after { clear: both; }
 
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 600px) {
+  .grid {
+    .half          { width: 66%; }
+    .one-quarter   { width: 33%; }
+  }
+}
+
+@media screen and (min-width: 900px) {
   .grid {
     .whole         { width: 100%; }
     .half          { width: 50%; }

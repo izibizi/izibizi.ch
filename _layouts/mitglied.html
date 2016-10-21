@@ -5,7 +5,13 @@ layout: default
 
 <div class="member grid">
   <div class="one-thirds unit center">
-    <img src="https://placekitten.com/580/800" alt="{{ page.name }}" class="thumbnail">
+    {% if page.no_image %}
+      <div class="placeholder">
+        <p class="lead">Leider kein Bild</p>
+      </div>
+    {% else %}
+      <img class="img-thumbnail" src="/img/mitglieder/{{ page.slug }}.jpg" alt="{{ page.name }}">
+    {% endif %}
   </div>
   <div class="two-thirds unit">
     {% if page.rufname %}
