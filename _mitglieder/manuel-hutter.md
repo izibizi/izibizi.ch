@@ -1,6 +1,6 @@
 ---
 name: Manuel Hutter
-instrument: Posaune
+instrument: Trompete
 rufname: Manuel
 aufgabe: Öffentlichkeitsarbeit, Schminkteam
 spruch: Nememer no ein?

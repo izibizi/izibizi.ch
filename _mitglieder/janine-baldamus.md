@@ -1,5 +1,5 @@
 ---
-name: Janine Mosimann
+name: Janine Baldamus
 instrument: Hörnli
 rufname: Schniin
 aufgabe: Schminken
