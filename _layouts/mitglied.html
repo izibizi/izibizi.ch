@@ -5,13 +5,7 @@ layout: default
 
 <div class="member grid">
   <div class="one-thirds unit center">
-    {% if page.no_image %}
-      <div class="placeholder">
-        <p class="lead">Leider kein Bild</p>
-      </div>
-    {% else %}
-      <img class="img-thumbnail" src="/img/mitglieder/{{ page.slug }}.jpg" alt="{{ page.name }}">
-    {% endif %}
+    <img class="img-thumbnail" src="{{ '/img/mitglieder/' | prepend: site.baseurl }}{{ page.slug }}.jpg" alt="{{ page.name }}">
   </div>
   <div class="two-thirds unit">
     {% if page.rufname %}
