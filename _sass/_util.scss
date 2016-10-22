@@ -4,6 +4,13 @@
 .img-thumbnail {
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
 }
+.img-link {
+  border: 1px solid $red;
+  padding: 4px;
+}
+a:hover .img-link {
+  border-color: $gold;
+}
 
 a.thumbnail:hover {
   border-color: $red;
