@@ -3,9 +3,16 @@ task :build do
   system 'bundle exec jekyll build'
 end
 
-desc 'Deploy the site'
-task :deploy => [:build] do
-  exec 'rsync -av --delete _site/ test.izibizi.ch:public_html/test.izibizi.ch/'
+namespace :deploy do
+  desc 'Deploy to TEST'
+  task :test => [:build] do
+    exec 'rsync -av --delete _site/ test.izibizi.ch:public_html/test.izibizi.ch/'
+  end
+
+  desc 'Deploy to PROD'
+  task :prod => [:build] do
+    exec 'rsync -av --delete _site/ izibizi.ch:public_html/izibizi.ch/'
+  end
 end
 
 namespace :members do
