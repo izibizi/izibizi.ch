@@ -122,3 +122,20 @@ footer {
 @import "hero";
 @import "mitglieder";
 @import "nav";
+
+#passiv {
+  width: 160px;
+  height: 160px;
+  position: fixed;
+  right: -80px;
+  bottom: -80px;
+  transform: rotate(-45deg);
+
+  text-align: center;
+  background: $red;
+  a, a:visited {
+    color: #eee;
+    // line-height: 200px;
+  }
+
+}

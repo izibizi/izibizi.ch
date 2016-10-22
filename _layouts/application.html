@@ -13,10 +13,14 @@
 {{ content }}
 
 <footer>
-  <p>&copy; 2016 GM Izi bizi tini wini &mdash; <a href="{{ '/impressum' | prefix: site.baseurl }}">Impressum</a></p>
+  <p>&copy; 2016 GM Izi bizi tini wini &mdash; <a href="{{ '/impressum' | prepend: site.baseurl }}">Impressum</a></p>
   <p>Code &amp; Design by <a href="https://hutter.io">Manuel Hutter</a></p>
   <p>Hosting by <a href="https://order.cyon.ch/affiliate/8041982c-1745-41f7-94bc-bb67c7066785">cyon.ch</a></p>
 </footer>
+
+<div id="passiv">
+  <a href="{{ '/passiv' | prepend: site.baseurl }}">Passivmitglied werden!</a>
+</div>
 
 </body>
 </html>
