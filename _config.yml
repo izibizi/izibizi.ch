@@ -49,6 +49,7 @@ sass:
 gems:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - octopress-minify-html
 exclude:
   - Gemfile
   - Rakefile
