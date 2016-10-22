@@ -30,9 +30,21 @@ namespace :members do
 end
 
 namespace :images do
-  desc 'optimize JPG and PNG images'
-  task :optimize do
-    system 'jpegoptim --strip-all --totals img/**/*.jpg'
+  desc 'optimize all images'
+  task :optimize => ['images:optimize:jpg', 'images:optimize:png']
+
+  namespace :optimize do
+    desc 'optimize all JPEGs'
+    task :jpg do
+      system 'jpegoptim --strip-all --totals img/**/*.jpg'
+    end
+
+    desc 'optimize all PNGs'
+    task :png do
+      Dir.glob('img/**/*.png') do |png|
+        system "optipng -o7 -zm1-9 #{png}"
+      end
+    end
   end
 
   desc 'generate missing thumbnail images'
