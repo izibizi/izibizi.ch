@@ -1,4 +1,9 @@
+Header set Strict-Transport-Security "max-age=15552000"
+
 RewriteEngine On
 
 RewriteCond %{HTTPS} =off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [QSA,L,R=301]
+
+RewriteCond %{HTTP_HOST} =izibizi.ch [NC]
+RewriteRule ^ https://www.izibizi.ch%{REQUEST_URI} [QSA,L,R=301]
