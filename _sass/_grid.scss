@@ -21,10 +21,9 @@
     display: block;
     float: left;
     width: 100%;
-    padding: 1rem;
     margin: 0;
   }
-  .one-quarter { width: 50%; }
+  .narrow-quarter { width: 50%; }
 }
 
 // clearfix after grids
@@ -38,18 +37,26 @@
 
 @media screen and (min-width: 600px) {
   .grid {
-    .half          { width: 66%; }
-    .one-quarter   { width: 33%; }
+    .half           { width: 66%; }
+    .one-quarter    { width: 33%; }
+    .narrow-quarter { width: 25%; }
   }
 }
 
 @media screen and (min-width: 900px) {
   .grid {
-    .whole         { width: 100%; }
-    .half          { width: 50%; }
-    .one-thirds    { width: 34%; }
-    .two-thirds    { width: 66%; }
-    .one-quarter   { width: 25%; }
-    .three-quarter { width: 75%; }
+    .whole          { width: 100%; }
+    .half           { width: 50%; }
+    .one-thirds     { width: 34%; }
+    .two-thirds     { width: 66%; }
+    .one-quarter    { width: 33%; }
+    .narrow-quarter { width: 25%; }
+    .three-quarter  { width: 75%; }
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .grid {
+    .one-quarter    { width: 25%; }
   }
 }

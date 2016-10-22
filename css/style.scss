@@ -104,6 +104,21 @@ footer {
   font-size: 1.5em;
 }
 
+.termin {
+  border: 1px solid #eee;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  min-height: 106px;
+}
+.termin.highlight {
+  // border: none;
+  // border-color: #ddd;
+  background: $red; // fallback
+  background: linear-gradient(120deg, $red 20%, $gold 80%);
+  color: #eee;
+  h3, strong { color: #fff; }
+}
+
 @import "hero";
 @import "mitglieder";
 @import "nav";

@@ -1,0 +1,10 @@
+<div class="termine grid">
+  {% for termin in site.data.termine %}
+    <div class="one-quarter unit">
+      <div class="termin{% if termin.highlight %} highlight{% endif %}">
+        <h3>{{ termin.datum }}</h3>
+        {{ termin.event | markdownify }}
+      </div>
+    </div>
+  {% endfor %}
+</div>

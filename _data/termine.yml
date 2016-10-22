@@ -1,0 +1,15 @@
+---
+- datum: '11.11.2016'
+  event: '**Fasnachtsbeginn** in Amriswil'
+- datum: '23.02.2017'
+  event: '**SchmuDo**'
+- datum: '01.03.2017'
+  event: '**Aschermittwoch**'
+- datum: '02.03.2017'
+  event: '**Herisauer Schnitzelbankabend**'
+  highlight: true
+- datum: '04.03.2017'
+  event: '**Grosses Guggenfest** in der Chälblihalle'
+  highlight: true
+- datum: '05.03.2017'
+  event: '**Funkesonntig**'
