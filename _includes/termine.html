@@ -2,8 +2,9 @@
   {% for termin in site.data.termine %}
     <div class="one-quarter unit">
       <div class="termin{% if termin.highlight %} highlight{% endif %}">
-        <h3>{{ termin.datum }}</h3>
-        {{ termin.event | markdownify }}
+        <h3>{{ termin.tag }} <time>{{ termin.datum }}</time></h3>
+        <strong>{{ termin.event }}</strong>
+        <span>{{ termin.wo }}</span>
       </div>
     </div>
   {% endfor %}
