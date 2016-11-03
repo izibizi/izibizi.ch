@@ -7,6 +7,7 @@ nav {
     text-decoration: none;
     padding: 0 1rem;
     border-right: 1px solid rgba(255, 255, 255, 0.3);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
   }
   a:last-child {
     border-right: none;
@@ -26,7 +27,6 @@ nav {
 
   a, a:visited {
     color: #fff;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
   }
 }
 .hero .navbar {
@@ -35,6 +35,6 @@ nav {
 
 .sb {
   a {
-    border-right-color: hsl(184, 5, 25);
+    border-right-color: #ddd;
   }
 }

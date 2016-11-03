@@ -2,10 +2,10 @@
 ---
 @import "reset";
 
-$gold: hsl(37, 50%, 50%);
-$red: hsl(7, 50%, 50%);
-$bg: hsl(184, 5, 15);
-$fg: $gold;
+$gold: hsl(30, 60, 54);
+$red: hsl(0, 60, 54);
+$bg: #fff;
+$fg: hsl(184, 5, 35);
 
 // 940 x 410
 $logo-width: 940px;
@@ -22,7 +22,6 @@ html, body {
 body {
   background: $bg;
   color: $fg;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 
   font-size: 16px;
   line-height: 1.625;
@@ -43,11 +42,10 @@ body * + * {
 
 h1, h2, h3, h4, h5 {
   font-weight: 500;
-  color: #ddd;
-  text-shadow: 0 0 5px #000;
+  color: #333;
 
   small {
-    color: #ccc;
+    color: #555;
     font-weight: 400;
   }
 }
@@ -57,7 +55,7 @@ h1 {
 }
 
 strong {
-  color: #fff;
+  color: #333;
 }
 
 img {
@@ -72,14 +70,13 @@ hr {
 
 a {
   text-decoration: none;
-  transition: color 0.4s;
 }
 a, a:visited {
   color: $red;
 }
 a:hover {
-  color: #ccc;
-  // text-decoration: underline;
+  color: $gold;
+  text-decoration: underline;
 }
 
 header {
@@ -97,9 +94,9 @@ footer {
 
   text-align: center;
   font-size: 0.8rem;
-  border-top: 1px solid #111;
-  background: darken($bg, 5%);
-  color: darken($fg, 20%);
+  border-top: 1px solid #eee;
+  background: #f6f6f6;
+  color: lighten($fg, 20%);
   opacity: 0.8;
 }
 
@@ -108,12 +105,14 @@ footer {
 }
 
 .termin {
-  border: 1px solid #444;
+  border: 1px solid #eee;
   margin: 0.5rem;
   padding: 0.5rem;
   min-height: 106px;
 }
 .termin.highlight {
+  // border: none;
+  // border-color: #ddd;
   background: $red; // fallback
   background: linear-gradient(120deg, $red 20%, $gold 80%);
   color: #eee;
