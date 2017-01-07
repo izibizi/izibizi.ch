@@ -4,12 +4,7 @@ layout: application
 
 <header class="hero">
   {% include nav.html %}
-  <div>
-    <a href="{{ '/' | prepend: site.baseurl }}">
-      <img class="logo" src="{{ '/img/izi-logo.png' | prepend: site.baseurl }}" alt="Izi bizi tini wini">
-    </a>
-    <p class="lead"><strong>Grosses Guggenfest</strong> am Samstag, 04.03.2017 in der Chälblihalle in Herisau!</p>
-  </div>
+  {% include hero.html %}
 </header>
 
 <main class="container">

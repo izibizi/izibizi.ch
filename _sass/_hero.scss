@@ -12,15 +12,37 @@
     margin: 2rem auto;
     font-style: italic;
   }
+  .lead { font-size: 2rem; }
   strong { color: #fff; }
 
   div {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
+    // position: absolute;
+    // top: 50%;
+    // left: 0;
+    // right: 0;
     padding: 0 1rem;
-    transform: translateY(-50%);
+    // transform: translateY(-50%);
     margin-top: 3rem;
+  }
+
+  .logo-rb {
+    width: 100%;
+    max-width: 445px;
+  }
+
+  .logo-container {
+    max-width: 445px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      margin: 0;
+    }
+
+    a:first-child {
+      padding-right: 4px;
+    }
   }
 }
