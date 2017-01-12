@@ -16,12 +16,7 @@
   strong { color: #fff; }
 
   div {
-    // position: absolute;
-    // top: 50%;
-    // left: 0;
-    // right: 0;
     padding: 0 1rem;
-    // transform: translateY(-50%);
     margin-top: 3rem;
   }
 
@@ -39,10 +34,11 @@
 
     a {
       margin: 0;
+      padding-right: 4px;
     }
 
-    a:first-child {
-      padding-right: 4px;
+    a:last-child {
+      padding-right: 0;
     }
   }
 }
