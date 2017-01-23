@@ -22,24 +22,29 @@
 
   .logo-rb {
     width: 100%;
-    max-width: 445px;
+    max-width: 450px;
   }
 
   .logo-container {
-    max-width: 445px;
+    max-width: 450px;
     margin: 0 auto;
     padding: 0;
-    display: flex;
-    justify-content: space-around;
 
     a {
-      max-width: 34%;
+      display: block;
+      float: left;
+      width: 33.33333%;
+      max-width: 150px;
       margin: 0;
-      padding-right: 4px;
+      padding: 0 2px;
     }
-
+    a:first-child {
+      position: relative;
+      left: -2px;
+    }
     a:last-child {
-      padding-right: 0;
+      position: relative;
+      right: -2px;
     }
   }
 }
