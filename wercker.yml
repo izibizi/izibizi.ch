@@ -12,5 +12,13 @@ deploy:
             name: rake:build
             code: rake build
         - script:
+            name: install rsync
+            code: 'apt-get update -q && apt-get install -yq rsync'
+        - add-to-known_hosts:
+            hostname: test.izibizi.ch
+            fingerprint: SHA256:x9TRlaDXMSbuFjQ8oDmEv44KPjPl5oN+dQ7ezt0m1X0
+        - add-ssh-key:
+            keyname: test
+        - script:
             name: rake:deploy:test
             code: rake deploy:test
