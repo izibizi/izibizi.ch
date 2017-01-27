@@ -16,7 +16,7 @@ deploy:
             code: 'apt-get update -q && apt-get install -yq rsync'
         - add-to-known_hosts:
             hostname: test.izibizi.ch
-            fingerprint: SHA256:x9TRlaDXMSbuFjQ8oDmEv44KPjPl5oN+dQ7ezt0m1X0
+            fingerprint: b9:b1:36:d3:4d:61:54:c3:50:4e:41:c9:84:d0:fe:03
         - add-ssh-key:
             keyname: test
         - script:
