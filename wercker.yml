@@ -3,5 +3,10 @@ build:
     steps:
         - bundle-install
         - script:
-            name: build
+            name: rake:build
             code: rake build
+deploy:
+    steps:
+        - script:
+            name: rake:deploy:test
+            code: rake deploy:test
