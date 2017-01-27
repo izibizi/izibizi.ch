@@ -7,6 +7,10 @@ build:
             code: rake build
 deploy:
     steps:
+        - bundle-install
+        - script:
+            name: rake:build
+            code: rake build
         - script:
             name: rake:deploy:test
             code: rake deploy:test
