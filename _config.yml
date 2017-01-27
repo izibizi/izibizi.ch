@@ -54,3 +54,4 @@ exclude:
   - Gemfile
   - Rakefile
   - Gemfile.lock
+  - wercker.yml
