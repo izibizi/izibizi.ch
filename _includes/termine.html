@@ -1,5 +1,6 @@
 <div class="termine grid">
   {% for termin in site.data.termine %}
+    {% if termin.link %}<a href="{{ termin.link }}">{% endif %}
     <div class="one-quarter unit">
       <div class="termin{% if termin.highlight %} highlight{% endif %}">
         <h3>{{ termin.tag }} <time>{{ termin.datum }}</time></h3>
@@ -7,5 +8,6 @@
         <span>{{ termin.wo }}</span>
       </div>
     </div>
+    {% if termin.link %}</a>{% endif %}
   {% endfor %}
 </div>

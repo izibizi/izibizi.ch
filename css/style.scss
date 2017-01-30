@@ -119,6 +119,7 @@ footer {
   margin: 0.5rem;
   padding: 0.5rem;
   min-height: 106px;
+  color: $fg;
 }
 .termin.highlight {
   // border: none;
@@ -128,6 +129,9 @@ footer {
   color: #eee;
   h3, strong, a, a:visited { color: #fff; }
   a { text-decoration: underline; }
+}
+a .termin strong {
+  text-decoration: underline;
 }
 
 @import "hero";

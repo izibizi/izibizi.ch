@@ -3,11 +3,13 @@
   tag: Sa.
   event: 40 Jahre Sauknapp
   wo: Herisau
+  link: https://www.facebook.com/events/1821812598100832/
 
 - datum: '05.02.2017'
   tag: So.
   event: Umzug (#53)
   wo: Gossau SG
+  link: 'http://www.fakogossau.ch/fakogossau/module/pages/detail.asp?IDPage=87&PageKatalogeID=3&menuid=&parentid=&pnx=&TopPnx=&banner=&button='
 
 - datum: '12.02.2017'
   tag: So.
@@ -23,6 +25,7 @@
   tag: So.
   event: Umzug
   wo: Diepoldsau
+  link: http://gula-gula.ch/fasnachts-umzug/
 
 - datum: '23.02.2017'
   tag: Do.
@@ -62,9 +65,10 @@
 
 - datum: '04.03.2017'
   tag: Sa.
-  event: '<a href="https://www.facebook.com/events/341880936185710/">Grosses Guggenfest</a>'
+  event: Grosses Guggenfest
   wo: Chälblihalle, Herisau
   highlight: true
+  link: https://www.facebook.com/events/341880936185710/
 
 - datum: '05.03.2017'
   tag: So.
