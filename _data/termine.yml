@@ -1,9 +1,4 @@
 ---
-- datum: '28.01.2017'
-  tag: Sa.
-  event: Gugge Fescht
-  wo: Waldstatt
-
 - datum: '04.02.2017'
   tag: Sa.
   event: 40 Jahre Sauknapp
@@ -11,12 +6,12 @@
 
 - datum: '05.02.2017'
   tag: So.
-  event: Umzug
+  event: Umzug (#53)
   wo: Gossau SG
 
 - datum: '12.02.2017'
   tag: So.
-  event: Umzug
+  event: Umzug (#45)
   wo: Wattwil
 
 - datum: '18.02.2017'
