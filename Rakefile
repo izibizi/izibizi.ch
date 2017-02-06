@@ -6,12 +6,12 @@ end
 namespace :deploy do
   desc 'Deploy to TEST'
   task :test => [:build] do
-    exec 'rsync -av --delete _site/ test.izibizi.ch:public_html/test.izibizi.ch/'
+    exec 'rsync -avP --delete _site/ test.izibizi.ch:public_html/test.izibizi.ch/'
   end
 
   desc 'Deploy to PROD'
   task :prod => [:build] do
-    exec 'rsync -av --delete _site/ izibizi.ch:public_html/izibizi.ch/'
+    exec 'rsync -avP --delete _site/ izibizi.ch:public_html/izibizi.ch/'
   end
 end
 
