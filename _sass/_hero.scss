@@ -1,7 +1,7 @@
 .hero {
   $hero-width: 600px;
-  // height: 100%;
-  min-height: 840px;
+  height: 100%;
+  min-height: 450px;
   position: relative;
   background: $red; // fallback
   background: linear-gradient(120deg, $gold 20%, $red 80%);
