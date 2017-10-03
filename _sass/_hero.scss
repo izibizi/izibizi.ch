@@ -7,6 +7,15 @@
   background: linear-gradient(120deg, $gold 20%, $red 80%);
   color: #eee;
 
+  div {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    padding: 0 1rem;
+    transform: translateY(-50%);
+  }
+
   p {
     display: block;
     max-width: $hero-width;
@@ -21,11 +30,6 @@
 
   .plakat {
     max-width: $hero-width;
-  }
-
-  div {
-    padding: 0 1rem;
-    margin-top: 3rem;
   }
 
   .logo-rb {
