@@ -2,7 +2,7 @@
 name: Vincenzo Zingali
 instrument: Trompete
 rufname: Which
-aufgabe: Musikalischer Leiter, Lagerchef
+aufgabe: Kassier
 spruch: jiha!
 hobbys: Tschutte
 dabei_seit: 1997 (vorher Kindermitglied)
