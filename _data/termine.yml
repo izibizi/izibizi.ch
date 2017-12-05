@@ -32,7 +32,7 @@
 - datum: '26.01.2018'
   tag: Fr.
   event: Guggengaudi
-  wo: Langnau a. A.
+  wo: Langnau a.A.
 
 - datum: '27.01.2018'
   tag: Sa.
@@ -64,8 +64,12 @@
 
 - datum: '08.02.2018'
   tag: Do.
+  event: Aagugge 06:00
+  wo: St. Gallen
+- datum: '08.02.2018'
+  tag: Do.
   event: SchmuDo
-  wo: St. Gallen (Morgen), Flawil (Abend)
+  wo: Flawil
 
 - datum: '09.02.2018'
   tag: Fr.
@@ -81,6 +85,7 @@
   tag: Mi.
   event: Aschermittwoch
   wo: Herisau
+  highlight: true
 
 - datum: '15.02.2018'
   tag: Do.
@@ -110,3 +115,4 @@
   tag: So.
   event: Gugge-Tröffe
   wo: Herisau
+  highlight: true
