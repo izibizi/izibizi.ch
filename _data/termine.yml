@@ -6,113 +6,18 @@
 #  highlight: true
 #  link: https://www.facebook.com/events/341880936185710/
 
-- datum: '12.01.2018'
-  tag: Fr.
-  event: Guggenfestival Fürstenland
-  wo: Gossau SG
-
-- datum: '19.01.2018'
-  tag: Fr.
-  event: Dickler Maskenball
-  wo: Dicken
-
-- datum: '20.01.2018'
-  tag: Sa.
-  event: Riethüsli-Guggen Party
-  wo: Riethüsli
-- datum: '20.01.2018'
-  tag: Sa.
-  event: Husaren Höll
-  wo: Rickenbach
-- datum: '20.01.2018'
-  tag: Sa.
-  event: birräWeich 2018
-  wo: Schwarzenbach
-
-- datum: '26.01.2018'
-  tag: Fr.
-  event: Guggengaudi
-  wo: Langnau a.A.
-
-- datum: '27.01.2018'
-  tag: Sa.
-  event: Maskenball
-  wo: Henau
-- datum: '27.01.2018'
-  tag: Sa.
-  event: Sauknapp-Party
-  wo: Herisau
-
-- datum: '02.02.2018'
-  tag: Fr.
-  event: Beizenfasnacht
-  wo: Herisau / Urnäsch
-
-- datum: '03.02.2018'
-  tag: Sa.
-  event: Maskenball
-  wo: Lenggenwil
-- datum: '03.02.2018'
-  tag: Sa.
-  event: Infernoball
-  wo: Rorschacherberg
-
-- datum: '04.02.2018'
-  tag: So.
-  event: Umzug
-  wo: Lenggenwil
-
-- datum: '08.02.2018'
+- datum: '28.02.2019'
   tag: Do.
-  event: Aagugge 06:00
-  wo: St. Gallen
-- datum: '08.02.2018'
-  tag: Do.
-  event: SchmuDo
-  wo: Flawil
+  event: SchmuDo 2019
 
-- datum: '09.02.2018'
-  tag: Fr.
-  event: Fasnacht Willerzell
-  wo: Einsiedeln
-
-- datum: '10.02.2018'
-  tag: Sa.
-  event: Fasnacht Willerzell
-  wo: Einsiedeln
-
-- datum: '14.02.2018'
+- datum: '06.03.2019'
   tag: Mi.
   event: Aschermittwoch
   wo: Herisau
   highlight: true
 
-- datum: '15.02.2018'
+- datum: '07.03.2019'
   tag: Do.
   event: Schnitzelbankabend
-  wo: Herisau
-  highlight: true
-
-- datum: '16.02.2018'
-  tag: Fr.
-  event: Guggetreffe
-  wo: Schönegrond
-- datum: '16.02.2018'
-  tag: Fr.
-  event: Maskenball
-  wo: Rehtobel
-- datum: '16.02.2018'
-  tag: Fr.
-  event: Floor Club
-  wo: Kloten
-
-- datum: '17.02.2018'
-  tag: Sa.
-  event: Hülernacht
-  wo: Arbon
-
-- datum: '18.02.2018'
-  tag: So.
-  event: Gugge-Tröffe
   wo: Herisau
   highlight: true
